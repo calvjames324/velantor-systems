@@ -13,8 +13,6 @@ A data-driven development studio
 
 We’re an engineering team focused on machine learning and applied AI, with strong web development to deliver complete, usable products. We ship ML-driven POCs in about a week. From research-inspired prototypes to production-scale ML systems and full-stack applications, we build end to end.
 
-Reach out to us on our email, or you can DM us on our LinkedIn below
-
 [work](#work) [linkedin](https://www.linkedin.com) [email](mailto:hello@velantor.systems)
 
 ![](./assets/hero.svg)

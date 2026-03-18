@@ -325,6 +325,9 @@
   .h-px {
     height: 1px;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -402,6 +405,15 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .origin-center {
+    transform-origin: center;
+  }
+  .scale-90 {
+    --tw-scale-x: 90%;
+    --tw-scale-y: 90%;
+    --tw-scale-z: 90%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -505,6 +517,9 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
@@ -624,6 +639,9 @@
   .text-\[60px\] {
     font-size: 60px;
   }
+  .text-\[64px\] {
+    font-size: 64px;
+  }
   .text-\[72px\] {
     font-size: 72px;
   }
@@ -654,6 +672,10 @@
   .leading-\[1\.45\] {
     --tw-leading: 1.45;
     line-height: 1.45;
+  }
+  .leading-\[1px\] {
+    --tw-leading: 1px;
+    line-height: 1px;
   }
   .leading-\[20px\] {
     --tw-leading: 20px;
@@ -1095,6 +1117,21 @@
       margin-inline: auto;
     }
   }
+  .max-\[1199px\]\:mt-2 {
+    @media (width < 1199px) {
+      margin-top: calc(var(--spacing) * 2);
+    }
+  }
+  .max-\[1199px\]\:mt-4 {
+    @media (width < 1199px) {
+      margin-top: calc(var(--spacing) * 4);
+    }
+  }
+  .max-\[1199px\]\:mt-5 {
+    @media (width < 1199px) {
+      margin-top: calc(var(--spacing) * 5);
+    }
+  }
   .max-\[1199px\]\:mt-8 {
     @media (width < 1199px) {
       margin-top: calc(var(--spacing) * 8);
@@ -1105,9 +1142,19 @@
       margin-left: calc(var(--spacing) * 0);
     }
   }
+  .max-\[1199px\]\:flex {
+    @media (width < 1199px) {
+      display: flex;
+    }
+  }
   .max-\[1199px\]\:hidden {
     @media (width < 1199px) {
       display: none;
+    }
+  }
+  .max-\[1199px\]\:h-auto {
+    @media (width < 1199px) {
+      height: auto;
     }
   }
   .max-\[1199px\]\:min-h-screen {
@@ -1150,6 +1197,14 @@
       max-width: 440px;
     }
   }
+  .max-\[1199px\]\:scale-100 {
+    @media (width < 1199px) {
+      --tw-scale-x: 100%;
+      --tw-scale-y: 100%;
+      --tw-scale-z: 100%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
   .max-\[1199px\]\:flex-col {
     @media (width < 1199px) {
       flex-direction: column;
@@ -1183,6 +1238,11 @@
   .max-\[1199px\]\:gap-10 {
     @media (width < 1199px) {
       gap: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[1199px\]\:overflow-visible {
+    @media (width < 1199px) {
+      overflow: visible;
     }
   }
   .max-\[1199px\]\:px-5 {
@@ -1337,6 +1397,19 @@
   .min-\[1200px\]\:h-screen {
     @media (width >= 1200px) {
       height: 100vh;
+    }
+  }
+  .min-\[1200px\]\:origin-center {
+    @media (width >= 1200px) {
+      transform-origin: center;
+    }
+  }
+  .min-\[1200px\]\:scale-90 {
+    @media (width >= 1200px) {
+      --tw-scale-x: 90%;
+      --tw-scale-y: 90%;
+      --tw-scale-z: 90%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
     }
   }
   .min-\[1200px\]\:items-center {
@@ -1507,6 +1580,21 @@
     }
   }
 }
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -1605,6 +1693,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
@@ -1641,14 +1732,14 @@
 </div>
 
 <main class="relative z-10 text-white antialiased">
-  <section class="flex items-center px-8 py-16 min-[1200px]:h-screen min-[1200px]:overflow-hidden min-[1200px]:py-0 max-[1199px]:min-h-screen max-[1199px]:px-5 max-[1199px]:pt-12 max-[1199px]:pb-16">
-    <div class="mx-auto flex w-fit items-center justify-between gap-16 min-[1200px]:h-[800px] max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:flex-col max-[1199px]:items-center max-[1199px]:gap-10">
+  <section class="flex h-screen items-center overflow-hidden px-8 py-0 max-[1199px]:min-h-screen max-[1199px]:overflow-visible max-[1199px]:px-5 max-[1199px]:pt-12 max-[1199px]:pb-16">
+    <div class="mx-auto flex h-[800px] w-fit origin-center scale-90 items-center justify-between gap-16 max-[1199px]:h-auto max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:scale-100 max-[1199px]:flex-col max-[1199px]:items-center max-[1199px]:gap-10">
       <div class="flex w-[680px] shrink-0 flex-col items-start max-[1199px]:w-full max-[1199px]:items-center">
         <h1 class="w-fit font-[&#39;Alegreya_SC&#39;,system-ui,sans-serif] text-[72px] font-bold text-white max-[1199px]:text-center max-[1199px]:text-[50px] max-[1199px]:leading-[0.95]" id="velantor-systems">
           Velantor Systems
         </h1>
 
-        <div class="tagline-word-spacing mt-4 ml-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[35px] font-normal italic text-white/60 max-[1199px]:ml-0 max-[1199px]:text-center max-[1199px]:text-[26px]">
+        <div class="tagline-word-spacing ml-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[35px] font-normal italic text-white/60 max-[1199px]:ml-0 max-[1199px]:text-center max-[1199px]:text-[26px] max-[1199px]:mt-4">
           A data-driven development studio
         </div>
         <div class="mt-1 ml-2 h-px w-[430px] bg-white/35 max-[1199px]:ml-0 max-[1199px]:w-[240px]"></div>
@@ -1656,9 +1747,6 @@
         <div class="mt-12 flex w-full flex-col items-start gap-8 max-[1199px]:mt-8 max-[1199px]:gap-8">
           <p class="w-full font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[32px] font-normal leading-[1.45] tracking-[0.01em] text-white/88 max-[1199px]:text-center max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]">
             We’re an engineering team focused on machine learning and applied AI, with strong web development to deliver complete, usable products. We ship ML-driven POCs in about a week. From research-inspired prototypes to production-scale ML systems and full-stack applications, we build end to end.
-          </p>
-          <p class="w-full font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[32px] font-normal leading-[1.45] tracking-[0.01em] text-white/88 max-[1199px]:text-center max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]">
-            Reach out to us on our email, or you can DM us on our LinkedIn below
           </p>
         </div>
 
@@ -1681,20 +1769,20 @@
     </div>
   </section>
 
-  <section id="work" class="flex px-8 py-16 min-[1200px]:h-screen min-[1200px]:items-center min-[1200px]:overflow-hidden min-[1200px]:py-0 max-[1199px]:px-5 max-[1199px]:pb-16 max-[1199px]:pt-10">
-    <div class="mx-auto flex w-fit flex-col gap-12 min-[1200px]:justify-center max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:gap-8">
+  <section id="work" class="flex h-screen items-center overflow-hidden px-8 py-0 max-[1199px]:h-auto max-[1199px]:overflow-visible max-[1199px]:px-5 max-[1199px]:pt-10 max-[1199px]:pb-16">
+    <div class="mx-auto flex w-fit origin-center scale-90 flex-col justify-center gap-12 max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:scale-100 max-[1199px]:gap-8">
       <div class="flex w-fit flex-col max-[1199px]:mx-auto max-[1199px]:items-center">
-        <h2 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[72px] font-bold leading-none text-white max-[1199px]:text-center max-[1199px]:text-[48px]" id="work-1">
+        <h2 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[60px] font-bold leading-none text-white max-[1199px]:text-center max-[1199px]:text-[48px]" id="work-1">
           work
         </h2>
         <div class="h-px w-full bg-white/70 max-[1199px]:w-[90px]"></div>
       </div>
 
-      <div class="hidden w-fit items-start justify-between gap-14 max-[1199px]:hidden min-[1200px]:flex">
+      <div class="flex w-fit items-start justify-between gap-14 max-[1199px]:hidden">
         <div class="flex w-[550px] shrink-0 flex-col items-start gap-8">
           <div class="flex w-full flex-col gap-6">
             <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-1" aria-pressed="false">
-              <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[28px] max-[1199px]:text-[24px] font-regular text-white" id="entity-linking-problem-for-narad">
+              <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[28px] font-normal text-white max-[1199px]:text-[24px]" id="entity-linking-problem-for-narad">
                 Entity Linking Problem for Narad
               </h3>
               <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.2] text-white/80">
@@ -1754,7 +1842,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col gap-6 min-[1200px]:hidden">
+      <div class="hidden flex-col gap-6 max-[1199px]:flex">
         <button type="button" class="project-card-mobile project-toggle text-left" data-project-group="mobile" data-project-id="narad-1" aria-pressed="false">
           <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[24px] font-normal leading-[1.15] text-white" id="entity-linking-problem-for-narad-5">
             Entity Linking Problem for Narad
