@@ -2,9 +2,9 @@
 title: Velantor Systems
 description: Engineering team focused on machine learning and applied AI
 favicon: "/assets/favicon.png"
-card: "/assets/card.jpg"
-domain: pager.joodaloop.com
-port: 9463
+card: ""
+domain: velantorsystems.com
+port: 3000
 tailwind: true
 css:
   - "/pager.css"

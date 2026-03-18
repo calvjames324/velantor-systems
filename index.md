@@ -2,10 +2,10 @@
 ---
 title: "Velantor Systems"
 description: "Engineering team focused on machine learning and applied AI"
-domain: "pager.joodaloop.com"
+domain: "velantorsystems.com"
 ---
 
-![](./assets/bg.svg)
+![](./assets/bg.png)
 
 # Velantor Systems
 
