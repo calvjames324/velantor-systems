@@ -201,6 +201,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -219,6 +222,9 @@
   .isolate {
     isolation: isolate;
   }
+  .z-0 {
+    z-index: 0;
+  }
   .z-10 {
     z-index: 10;
   }
@@ -227,6 +233,9 @@
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -237,8 +246,17 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
   }
   .mt-\[30px\] {
     margin-top: 30px;
@@ -254,6 +272,9 @@
   }
   .mr-50 {
     margin-right: calc(var(--spacing) * 50);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
   }
   .ml-0 {
     margin-left: calc(var(--spacing) * 0);
@@ -272,6 +293,9 @@
   }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .table {
     display: table;
@@ -316,6 +340,12 @@
   .w-\[430px\] {
     width: 430px;
   }
+  .w-\[547px\] {
+    width: 547px;
+  }
+  .w-\[550px\] {
+    width: 550px;
+  }
   .w-\[593px\] {
     width: 593px;
   }
@@ -354,6 +384,9 @@
   }
   .max-w-\[1100px\] {
     max-width: 1100px;
+  }
+  .max-w-\[1200px\] {
+    max-width: 1200px;
   }
   .max-w-\[1440px\] {
     max-width: 1440px;
@@ -394,14 +427,32 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .gap-0 {
     gap: calc(var(--spacing) * 0);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
+  }
+  .gap-14 {
+    gap: calc(var(--spacing) * 14);
+  }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
   }
   .self-center {
     align-self: center;
@@ -434,6 +485,15 @@
       background-color: color-mix(in oklab, var(--color-white) 35%, transparent);
     }
   }
+  .bg-white\/70 {
+    background-color: color-mix(in srgb, #fff 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 70%, transparent);
+    }
+  }
+  .object-cover {
+    object-fit: cover;
+  }
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
@@ -443,11 +503,17 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
   }
   .py-\[40px\] {
     padding-block: 40px;
@@ -461,8 +527,17 @@
   .py-\[65px\] {
     padding-block: 65px;
   }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
+  .pb-24 {
+    padding-bottom: calc(var(--spacing) * 24);
+  }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
   }
   .font-\[\'Alegreya\'\,system-ui\,sans-serif\] {
     font-family: 'Alegreya',system-ui,sans-serif;
@@ -504,6 +579,18 @@
   .text-\[10rem\] {
     font-size: 10rem;
   }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
+  .text-\[22px\] {
+    font-size: 22px;
+  }
+  .text-\[23px\] {
+    font-size: 23px;
+  }
   .text-\[24px\] {
     font-size: 24px;
   }
@@ -525,6 +612,12 @@
   .text-\[40px\] {
     font-size: 40px;
   }
+  .text-\[44px\] {
+    font-size: 44px;
+  }
+  .text-\[48px\] {
+    font-size: 48px;
+  }
   .text-\[50px\] {
     font-size: 50px;
   }
@@ -542,9 +635,25 @@
     --tw-leading: calc(var(--spacing) * 11);
     line-height: calc(var(--spacing) * 11);
   }
+  .leading-\[1\.2\] {
+    --tw-leading: 1.2;
+    line-height: 1.2;
+  }
+  .leading-\[1\.5\] {
+    --tw-leading: 1.5;
+    line-height: 1.5;
+  }
+  .leading-\[1\.15\] {
+    --tw-leading: 1.15;
+    line-height: 1.15;
+  }
   .leading-\[1\.25\] {
     --tw-leading: 1.25;
     line-height: 1.25;
+  }
+  .leading-\[1\.45\] {
+    --tw-leading: 1.45;
+    line-height: 1.45;
   }
   .leading-\[20px\] {
     --tw-leading: 20px;
@@ -651,6 +760,12 @@
       color: color-mix(in oklab, var(--color-white) 75%, transparent);
     }
   }
+  .text-white\/78 {
+    color: color-mix(in srgb, #fff 78%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 78%, transparent);
+    }
+  }
   .text-white\/80 {
     color: color-mix(in srgb, #fff 80%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -661,6 +776,12 @@
     color: color-mix(in srgb, #fff 85%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-white) 85%, transparent);
+    }
+  }
+  .text-white\/88 {
+    color: color-mix(in srgb, #fff 88%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 88%, transparent);
     }
   }
   .text-white\/90 {
@@ -683,6 +804,9 @@
   }
   .decoration-\[1px\] {
     text-decoration-thickness: 1px;
+  }
+  .underline-offset-\[1px\] {
+    text-underline-offset: 1px;
   }
   .underline-offset-\[2px\] {
     text-underline-offset: 2px;
@@ -720,6 +844,599 @@
       @media (hover: hover) {
         opacity: 75%;
       }
+    }
+  }
+  .max-\[1217px\]\:mx-auto {
+    @media (width < 1217px) {
+      margin-inline: auto;
+    }
+  }
+  .max-\[1217px\]\:mt-8 {
+    @media (width < 1217px) {
+      margin-top: calc(var(--spacing) * 8);
+    }
+  }
+  .max-\[1217px\]\:ml-0 {
+    @media (width < 1217px) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .max-\[1217px\]\:hidden {
+    @media (width < 1217px) {
+      display: none;
+    }
+  }
+  .max-\[1217px\]\:min-h-screen {
+    @media (width < 1217px) {
+      min-height: 100vh;
+    }
+  }
+  .max-\[1217px\]\:w-\[260px\] {
+    @media (width < 1217px) {
+      width: 260px;
+    }
+  }
+  .max-\[1217px\]\:w-full {
+    @media (width < 1217px) {
+      width: 100%;
+    }
+  }
+  .max-\[1217px\]\:max-w-\[440px\] {
+    @media (width < 1217px) {
+      max-width: 440px;
+    }
+  }
+  .max-\[1217px\]\:flex-col {
+    @media (width < 1217px) {
+      flex-direction: column;
+    }
+  }
+  .max-\[1217px\]\:items-start {
+    @media (width < 1217px) {
+      align-items: flex-start;
+    }
+  }
+  .max-\[1217px\]\:justify-center {
+    @media (width < 1217px) {
+      justify-content: center;
+    }
+  }
+  .max-\[1217px\]\:gap-8 {
+    @media (width < 1217px) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
+  .max-\[1217px\]\:gap-10 {
+    @media (width < 1217px) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[1217px\]\:px-5 {
+    @media (width < 1217px) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+  }
+  .max-\[1217px\]\:pt-10 {
+    @media (width < 1217px) {
+      padding-top: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[1217px\]\:pt-12 {
+    @media (width < 1217px) {
+      padding-top: calc(var(--spacing) * 12);
+    }
+  }
+  .max-\[1217px\]\:pb-16 {
+    @media (width < 1217px) {
+      padding-bottom: calc(var(--spacing) * 16);
+    }
+  }
+  .max-\[1217px\]\:text-center {
+    @media (width < 1217px) {
+      text-align: center;
+    }
+  }
+  .max-\[1217px\]\:text-\[24px\] {
+    @media (width < 1217px) {
+      font-size: 24px;
+    }
+  }
+  .max-\[1217px\]\:text-\[36px\] {
+    @media (width < 1217px) {
+      font-size: 36px;
+    }
+  }
+  .max-\[1217px\]\:text-\[48px\] {
+    @media (width < 1217px) {
+      font-size: 48px;
+    }
+  }
+  .max-\[1217px\]\:text-\[54px\] {
+    @media (width < 1217px) {
+      font-size: 54px;
+    }
+  }
+  .max-\[1217px\]\:leading-\[1\.65\] {
+    @media (width < 1217px) {
+      --tw-leading: 1.65;
+      line-height: 1.65;
+    }
+  }
+  .max-\[1217px\]\:leading-\[1\] {
+    @media (width < 1217px) {
+      --tw-leading: 1;
+      line-height: 1;
+    }
+  }
+  .max-\[1200px\]\:mx-auto {
+    @media (width < 1200px) {
+      margin-inline: auto;
+    }
+  }
+  .max-\[1200px\]\:mt-8 {
+    @media (width < 1200px) {
+      margin-top: calc(var(--spacing) * 8);
+    }
+  }
+  .max-\[1200px\]\:ml-0 {
+    @media (width < 1200px) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .max-\[1200px\]\:hidden {
+    @media (width < 1200px) {
+      display: none;
+    }
+  }
+  .max-\[1200px\]\:min-h-screen {
+    @media (width < 1200px) {
+      min-height: 100vh;
+    }
+  }
+  .max-\[1200px\]\:w-\[260px\] {
+    @media (width < 1200px) {
+      width: 260px;
+    }
+  }
+  .max-\[1200px\]\:w-full {
+    @media (width < 1200px) {
+      width: 100%;
+    }
+  }
+  .max-\[1200px\]\:max-w-\[440px\] {
+    @media (width < 1200px) {
+      max-width: 440px;
+    }
+  }
+  .max-\[1200px\]\:flex-col {
+    @media (width < 1200px) {
+      flex-direction: column;
+    }
+  }
+  .max-\[1200px\]\:items-start {
+    @media (width < 1200px) {
+      align-items: flex-start;
+    }
+  }
+  .max-\[1200px\]\:justify-center {
+    @media (width < 1200px) {
+      justify-content: center;
+    }
+  }
+  .max-\[1200px\]\:gap-8 {
+    @media (width < 1200px) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
+  .max-\[1200px\]\:gap-10 {
+    @media (width < 1200px) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[1200px\]\:px-5 {
+    @media (width < 1200px) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+  }
+  .max-\[1200px\]\:pt-10 {
+    @media (width < 1200px) {
+      padding-top: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[1200px\]\:pt-12 {
+    @media (width < 1200px) {
+      padding-top: calc(var(--spacing) * 12);
+    }
+  }
+  .max-\[1200px\]\:pb-16 {
+    @media (width < 1200px) {
+      padding-bottom: calc(var(--spacing) * 16);
+    }
+  }
+  .max-\[1200px\]\:text-center {
+    @media (width < 1200px) {
+      text-align: center;
+    }
+  }
+  .max-\[1200px\]\:text-\[24px\] {
+    @media (width < 1200px) {
+      font-size: 24px;
+    }
+  }
+  .max-\[1200px\]\:text-\[36px\] {
+    @media (width < 1200px) {
+      font-size: 36px;
+    }
+  }
+  .max-\[1200px\]\:text-\[48px\] {
+    @media (width < 1200px) {
+      font-size: 48px;
+    }
+  }
+  .max-\[1200px\]\:text-\[54px\] {
+    @media (width < 1200px) {
+      font-size: 54px;
+    }
+  }
+  .max-\[1200px\]\:leading-\[1\.65\] {
+    @media (width < 1200px) {
+      --tw-leading: 1.65;
+      line-height: 1.65;
+    }
+  }
+  .max-\[1200px\]\:leading-\[1\] {
+    @media (width < 1200px) {
+      --tw-leading: 1;
+      line-height: 1;
+    }
+  }
+  .max-\[1199px\]\:mx-auto {
+    @media (width < 1199px) {
+      margin-inline: auto;
+    }
+  }
+  .max-\[1199px\]\:mt-8 {
+    @media (width < 1199px) {
+      margin-top: calc(var(--spacing) * 8);
+    }
+  }
+  .max-\[1199px\]\:ml-0 {
+    @media (width < 1199px) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .max-\[1199px\]\:hidden {
+    @media (width < 1199px) {
+      display: none;
+    }
+  }
+  .max-\[1199px\]\:min-h-screen {
+    @media (width < 1199px) {
+      min-height: 100vh;
+    }
+  }
+  .max-\[1199px\]\:w-\[90px\] {
+    @media (width < 1199px) {
+      width: 90px;
+    }
+  }
+  .max-\[1199px\]\:w-\[100px\] {
+    @media (width < 1199px) {
+      width: 100px;
+    }
+  }
+  .max-\[1199px\]\:w-\[108px\] {
+    @media (width < 1199px) {
+      width: 108px;
+    }
+  }
+  .max-\[1199px\]\:w-\[240px\] {
+    @media (width < 1199px) {
+      width: 240px;
+    }
+  }
+  .max-\[1199px\]\:w-\[260px\] {
+    @media (width < 1199px) {
+      width: 260px;
+    }
+  }
+  .max-\[1199px\]\:w-full {
+    @media (width < 1199px) {
+      width: 100%;
+    }
+  }
+  .max-\[1199px\]\:max-w-\[440px\] {
+    @media (width < 1199px) {
+      max-width: 440px;
+    }
+  }
+  .max-\[1199px\]\:flex-col {
+    @media (width < 1199px) {
+      flex-direction: column;
+    }
+  }
+  .max-\[1199px\]\:items-center {
+    @media (width < 1199px) {
+      align-items: center;
+    }
+  }
+  .max-\[1199px\]\:items-start {
+    @media (width < 1199px) {
+      align-items: flex-start;
+    }
+  }
+  .max-\[1199px\]\:justify-center {
+    @media (width < 1199px) {
+      justify-content: center;
+    }
+  }
+  .max-\[1199px\]\:gap-6 {
+    @media (width < 1199px) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
+  .max-\[1199px\]\:gap-8 {
+    @media (width < 1199px) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
+  .max-\[1199px\]\:gap-10 {
+    @media (width < 1199px) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[1199px\]\:px-5 {
+    @media (width < 1199px) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+  }
+  .max-\[1199px\]\:pt-10 {
+    @media (width < 1199px) {
+      padding-top: calc(var(--spacing) * 10);
+    }
+  }
+  .max-\[1199px\]\:pt-12 {
+    @media (width < 1199px) {
+      padding-top: calc(var(--spacing) * 12);
+    }
+  }
+  .max-\[1199px\]\:pb-16 {
+    @media (width < 1199px) {
+      padding-bottom: calc(var(--spacing) * 16);
+    }
+  }
+  .max-\[1199px\]\:text-center {
+    @media (width < 1199px) {
+      text-align: center;
+    }
+  }
+  .max-\[1199px\]\:text-\[18px\] {
+    @media (width < 1199px) {
+      font-size: 18px;
+    }
+  }
+  .max-\[1199px\]\:text-\[20px\] {
+    @media (width < 1199px) {
+      font-size: 20px;
+    }
+  }
+  .max-\[1199px\]\:text-\[22px\] {
+    @media (width < 1199px) {
+      font-size: 22px;
+    }
+  }
+  .max-\[1199px\]\:text-\[24px\] {
+    @media (width < 1199px) {
+      font-size: 24px;
+    }
+  }
+  .max-\[1199px\]\:text-\[26px\] {
+    @media (width < 1199px) {
+      font-size: 26px;
+    }
+  }
+  .max-\[1199px\]\:text-\[28px\] {
+    @media (width < 1199px) {
+      font-size: 28px;
+    }
+  }
+  .max-\[1199px\]\:text-\[34px\] {
+    @media (width < 1199px) {
+      font-size: 34px;
+    }
+  }
+  .max-\[1199px\]\:text-\[36px\] {
+    @media (width < 1199px) {
+      font-size: 36px;
+    }
+  }
+  .max-\[1199px\]\:text-\[40px\] {
+    @media (width < 1199px) {
+      font-size: 40px;
+    }
+  }
+  .max-\[1199px\]\:text-\[44px\] {
+    @media (width < 1199px) {
+      font-size: 44px;
+    }
+  }
+  .max-\[1199px\]\:text-\[45px\] {
+    @media (width < 1199px) {
+      font-size: 45px;
+    }
+  }
+  .max-\[1199px\]\:text-\[46px\] {
+    @media (width < 1199px) {
+      font-size: 46px;
+    }
+  }
+  .max-\[1199px\]\:text-\[48px\] {
+    @media (width < 1199px) {
+      font-size: 48px;
+    }
+  }
+  .max-\[1199px\]\:text-\[50px\] {
+    @media (width < 1199px) {
+      font-size: 50px;
+    }
+  }
+  .max-\[1199px\]\:text-\[52px\] {
+    @media (width < 1199px) {
+      font-size: 52px;
+    }
+  }
+  .max-\[1199px\]\:text-\[54px\] {
+    @media (width < 1199px) {
+      font-size: 54px;
+    }
+  }
+  .max-\[1199px\]\:text-\[64px\] {
+    @media (width < 1199px) {
+      font-size: 64px;
+    }
+  }
+  .max-\[1199px\]\:leading-\[0\.95\] {
+    @media (width < 1199px) {
+      --tw-leading: 0.95;
+      line-height: 0.95;
+    }
+  }
+  .max-\[1199px\]\:leading-\[1\.55\] {
+    @media (width < 1199px) {
+      --tw-leading: 1.55;
+      line-height: 1.55;
+    }
+  }
+  .max-\[1199px\]\:leading-\[1\.65\] {
+    @media (width < 1199px) {
+      --tw-leading: 1.65;
+      line-height: 1.65;
+    }
+  }
+  .max-\[1199px\]\:leading-\[1\] {
+    @media (width < 1199px) {
+      --tw-leading: 1;
+      line-height: 1;
+    }
+  }
+  .min-\[1200px\]\:flex {
+    @media (width >= 1200px) {
+      display: flex;
+    }
+  }
+  .min-\[1200px\]\:hidden {
+    @media (width >= 1200px) {
+      display: none;
+    }
+  }
+  .min-\[1200px\]\:h-\[800px\] {
+    @media (width >= 1200px) {
+      height: 800px;
+    }
+  }
+  .min-\[1200px\]\:h-screen {
+    @media (width >= 1200px) {
+      height: 100vh;
+    }
+  }
+  .min-\[1200px\]\:items-center {
+    @media (width >= 1200px) {
+      align-items: center;
+    }
+  }
+  .min-\[1200px\]\:justify-center {
+    @media (width >= 1200px) {
+      justify-content: center;
+    }
+  }
+  .min-\[1200px\]\:overflow-hidden {
+    @media (width >= 1200px) {
+      overflow: hidden;
+    }
+  }
+  .min-\[1200px\]\:py-0 {
+    @media (width >= 1200px) {
+      padding-block: calc(var(--spacing) * 0);
+    }
+  }
+  .min-\[1201px\]\:flex {
+    @media (width >= 1201px) {
+      display: flex;
+    }
+  }
+  .min-\[1201px\]\:hidden {
+    @media (width >= 1201px) {
+      display: none;
+    }
+  }
+  .min-\[1201px\]\:h-\[800px\] {
+    @media (width >= 1201px) {
+      height: 800px;
+    }
+  }
+  .min-\[1201px\]\:h-screen {
+    @media (width >= 1201px) {
+      height: 100vh;
+    }
+  }
+  .min-\[1201px\]\:items-center {
+    @media (width >= 1201px) {
+      align-items: center;
+    }
+  }
+  .min-\[1201px\]\:justify-center {
+    @media (width >= 1201px) {
+      justify-content: center;
+    }
+  }
+  .min-\[1201px\]\:overflow-hidden {
+    @media (width >= 1201px) {
+      overflow: hidden;
+    }
+  }
+  .min-\[1201px\]\:py-0 {
+    @media (width >= 1201px) {
+      padding-block: calc(var(--spacing) * 0);
+    }
+  }
+  .min-\[1218px\]\:flex {
+    @media (width >= 1218px) {
+      display: flex;
+    }
+  }
+  .min-\[1218px\]\:hidden {
+    @media (width >= 1218px) {
+      display: none;
+    }
+  }
+  .min-\[1218px\]\:h-\[800px\] {
+    @media (width >= 1218px) {
+      height: 800px;
+    }
+  }
+  .min-\[1218px\]\:h-screen {
+    @media (width >= 1218px) {
+      height: 100vh;
+    }
+  }
+  .min-\[1218px\]\:items-center {
+    @media (width >= 1218px) {
+      align-items: center;
+    }
+  }
+  .min-\[1218px\]\:justify-center {
+    @media (width >= 1218px) {
+      justify-content: center;
+    }
+  }
+  .min-\[1218px\]\:overflow-hidden {
+    @media (width >= 1218px) {
+      overflow: hidden;
+    }
+  }
+  .min-\[1218px\]\:py-0 {
+    @media (width >= 1218px) {
+      padding-block: calc(var(--spacing) * 0);
     }
   }
   .sm\:w-\[300px\] {
@@ -916,49 +1633,267 @@
 }
 
     </style>
-    <link rel="stylesheet" type="text/css" href="/pager.css?v=e649858e" /> 
+    <link rel="stylesheet" type="text/css" href="/pager.css?v=dbaca1be" /> 
   </head>
   <body>
-    <main class="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#071726] text-white antialiased">
-  <img src="./assets/bg.svg" alt="" aria-hidden="true" class="absolute inset-0 h-full w-full max-w-none"/>
+    <div class="page-bg pointer-events-none fixed inset-0 z-0">
+  <img src="./assets/bg.svg" alt="" aria-hidden="true" class="h-full w-full object-cover"/>
+</div>
 
-  <div class="relative h-[1024px] w-[1440px] shrink-0 overflow-hidden">
-    <img src="./assets/bg.svg" alt="" aria-hidden="true" class="absolute left-0 top-0 h-[1024px] w-[1440px] max-w-none opacity-0"/>
+<main class="relative z-10 text-white antialiased">
+  <section class="flex items-center px-8 py-16 min-[1200px]:h-screen min-[1200px]:overflow-hidden min-[1200px]:py-0 max-[1199px]:min-h-screen max-[1199px]:px-5 max-[1199px]:pt-12 max-[1199px]:pb-16">
+    <div class="mx-auto flex w-fit items-center justify-between gap-16 min-[1200px]:h-[800px] max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:flex-col max-[1199px]:items-center max-[1199px]:gap-10">
+      <div class="flex w-[680px] shrink-0 flex-col items-start max-[1199px]:w-full max-[1199px]:items-center">
+        <h1 class="w-fit font-[&#39;Alegreya_SC&#39;,system-ui,sans-serif] text-[72px] font-bold text-white max-[1199px]:text-center max-[1199px]:text-[50px] max-[1199px]:leading-[0.95]" id="velantor-systems">
+          Velantor Systems
+        </h1>
 
-    <div class="relative flex h-full w-full items-center justify-center">
-      <section class="flex h-[800px] w-[1200px] items-center justify-between">
-        <div class="flex w-[680px] shrink-0 flex-col items-start overflow-hidden">
-          <h1 class="w-fit text-center font-[&#39;Alegreya_SC&#39;,system-ui,sans-serif] text-[72px] font-bold leading-[88px] text-white" id="velantor-systems">
-            Velantor Systems
-          </h1>
-          <div class="tagline-word-spacing w-full mt-2 ml-2 text-[35px] font-normal italic text-white/60 font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif]">
-              A data-driven development studio
-          </div>
+        <div class="tagline-word-spacing mt-4 ml-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[35px] font-normal italic text-white/60 max-[1199px]:ml-0 max-[1199px]:text-center max-[1199px]:text-[26px]">
+          A data-driven development studio
+        </div>
+        <div class="mt-1 ml-2 h-px w-[430px] bg-white/35 max-[1199px]:ml-0 max-[1199px]:w-[240px]"></div>
 
-          <div class="flex w-full flex-col items-start py-[50px]">
-            <p class="w-full font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[32px] font-light tracking-[0.01em] text-white/80">
-              We’re an engineering team focused on machine learning and applied AI, with strong web development to deliver complete, usable products. We stay close to current AI research and turn modern ideas into practical systems, not just demos.
-            </p>
-            <p class="mt-[30px] w-full font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[30px] font-light tracking-[0.01em] text-white/80">
-              Our edge is speed with rigour: we ship ML-driven POCs in about a week, ready for validation, investor demos, or real usage. From research-inspired prototypes to production-scale ML systems and full-stack applications, we build end to end.
-            </p>
-          </div>
-
-          <nav class="flex w-fit items-center justify-center gap-10 overflow-hidden">
-            <a href="#about" class="w-fit text-center font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[36px] font-bold leading-[44px] text-white underline decoration-[1px] underline-offset-[2px]">
-              about
-            </a>
-            <a href="#work" class="w-fit text-center font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[36px] font-bold leading-[44px] text-white underline decoration-[1px] underline-offset-[2px]">
-              work
-            </a>
-          </nav>
+        <div class="mt-12 flex w-full flex-col items-start gap-8 max-[1199px]:mt-8 max-[1199px]:gap-8">
+          <p class="w-full font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[32px] font-normal leading-[1.45] tracking-[0.01em] text-white/88 max-[1199px]:text-center max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]">
+            We’re an engineering team focused on machine learning and applied AI, with strong web development to deliver complete, usable products. We ship ML-driven POCs in about a week. From research-inspired prototypes to production-scale ML systems and full-stack applications, we build end to end.
+          </p>
+          <p class="w-full font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[32px] font-normal leading-[1.45] tracking-[0.01em] text-white/88 max-[1199px]:text-center max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]">
+            Reach out to us on our email, or you can DM us on our LinkedIn below
+          </p>
         </div>
 
-        <img src="./assets/hero.svg" alt="" aria-hidden="true" class="h-[700px] w-[340px] shrink-0 max-w-none"/>
-      </section>
+        <nav class="mt-12 flex w-fit items-center gap-14 max-[1199px]:mt-8 max-[1199px]:w-full max-[1199px]:justify-center max-[1199px]:gap-6">
+          <a href="#work" class="w-fit text-center font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[36px] font-bold text-white underline decoration-[1px] underline-offset-[2px] max-[1199px]:text-[28px]">
+            work
+          </a>
+          <a href="https://www.linkedin.com" class="w-fit text-center font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[36px] font-bold text-white underline decoration-[1px] underline-offset-[2px] max-[1199px]:text-[28px]">
+            linkedin
+          </a>
+          <a href="mailto:hello@velantor.systems" class="w-fit text-center font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[36px] font-bold text-white underline decoration-[1px] underline-offset-[2px] max-[1199px]:text-[28px]">
+            email
+          </a>
+        </nav>
+      </div>
+
+      <div class="flex w-[340px] shrink-0 justify-end max-[1199px]:hidden">
+        <img src="./assets/hero.svg" alt="" aria-hidden="true" class="h-[700px] w-[340px] max-w-none"/>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section id="work" class="flex px-8 py-16 min-[1200px]:h-screen min-[1200px]:items-center min-[1200px]:overflow-hidden min-[1200px]:py-0 max-[1199px]:px-5 max-[1199px]:pb-16 max-[1199px]:pt-10">
+    <div class="mx-auto flex w-fit flex-col gap-12 min-[1200px]:justify-center max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:gap-8">
+      <div class="flex w-fit flex-col max-[1199px]:mx-auto max-[1199px]:items-center">
+        <h2 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[72px] font-bold leading-none text-white max-[1199px]:text-center max-[1199px]:text-[48px]" id="work-1">
+          work
+        </h2>
+        <div class="h-px w-full bg-white/70 max-[1199px]:w-[90px]"></div>
+      </div>
+
+      <div class="hidden w-fit items-start justify-between gap-14 max-[1199px]:hidden min-[1200px]:flex">
+        <div class="flex w-[550px] shrink-0 flex-col items-start gap-8">
+          <div class="flex w-full flex-col gap-6">
+            <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-1" aria-pressed="false">
+              <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[28px] max-[1199px]:text-[24px] font-regular text-white" id="entity-linking-problem-for-narad">
+                Entity Linking Problem for Narad
+              </h3>
+              <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.2] text-white/80">
+                • Data Problem • Machine Learning • DataBase
+              </p>
+            </button>
+
+            <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-2" aria-pressed="false">
+              <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[28px] font-normal leading-[1.15] text-white" id="entity-linking-problem-for-narad-1">
+                Entity Linking Problem for Narad
+              </h3>
+              <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.2] text-white/80">
+                • Data Problem • Machine Learning • DataBase
+              </p>
+            </button>
+
+            <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-3" aria-pressed="false">
+              <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[28px] font-normal leading-[1.15] text-white" id="entity-linking-problem-for-narad-2">
+                Entity Linking Problem for Narad
+              </h3>
+              <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.2] text-white/80">
+                • Data Problem • Machine Learning • DataBase
+              </p>
+            </button>
+
+            <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-4" aria-pressed="false">
+              <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[28px] font-normal leading-[1.15] text-white" id="entity-linking-problem-for-narad-3">
+                Entity Linking Problem for Narad
+              </h3>
+              <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.2] text-white/80">
+                • Data Problem • Machine Learning • DataBase
+              </p>
+            </button>
+          </div>
+
+          <div class="flex w-full flex-col gap-4">
+            <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[44px] font-normal italic leading-none text-white" id="other-projects">
+              other projects
+            </h3>
+            <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-5" aria-pressed="false">
+              <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[28px] font-normal leading-[1.15] text-white" id="entity-linking-problem-for-narad-4">
+                Entity Linking Problem for Narad
+              </h3>
+              <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.2] text-white/80">
+                • Data Problem • Machine Learning • DataBase
+              </p>
+            </button>
+          </div>
+        </div>
+
+        <div class="w-[547px] shrink-0">
+          <div class="hidden" data-project-panel="desktop">
+            <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[30px] font-normal leading-[1.45] tracking-[0.01em] text-white/90">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6 min-[1200px]:hidden">
+        <button type="button" class="project-card-mobile project-toggle text-left" data-project-group="mobile" data-project-id="narad-1" aria-pressed="false">
+          <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[24px] font-normal leading-[1.15] text-white" id="entity-linking-problem-for-narad-5">
+            Entity Linking Problem for Narad
+          </h3>
+          <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[16px] leading-[1.2] text-white/80">
+            • Data Problem • Machine Learning • DataBase
+          </p>
+          <div class="project-inline-detail mt-5 hidden" data-project-panel="mobile" data-project-id="narad-1">
+            <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[18px] font-normal leading-[1.5] tracking-[0.01em] text-white/78">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </button>
+
+        <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-2" aria-pressed="false">
+          <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[24px] font-normal leading-[1.15] text-white" id="entity-linking-problem-for-narad-6">
+            Entity Linking Problem for Narad
+          </h3>
+          <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[16px] leading-[1.2] text-white/80">
+            • Data Problem • Machine Learning • DataBase
+          </p>
+          <div class="project-inline-detail mt-5 hidden" data-project-panel="mobile" data-project-id="narad-2">
+            <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[18px] font-normal leading-[1.5] tracking-[0.01em] text-white/78">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </button>
+
+        <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-3" aria-pressed="false">
+          <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[24px] font-normal leading-[1.15] text-white" id="entity-linking-problem-for-narad-7">
+            Entity Linking Problem for Narad
+          </h3>
+          <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[16px] leading-[1.2] text-white/80">
+            • Data Problem • Machine Learning • DataBase
+          </p>
+          <div class="project-inline-detail mt-5 hidden" data-project-panel="mobile" data-project-id="narad-3">
+            <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[18px] font-normal leading-[1.5] tracking-[0.01em] text-white/78">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </button>
+
+        <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-4" aria-pressed="false">
+          <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[24px] font-normal leading-[1.15] text-white" id="entity-linking-problem-for-narad-8">
+            Entity Linking Problem for Narad
+          </h3>
+          <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[16px] leading-[1.2] text-white/80">
+            • Data Problem • Machine Learning • DataBase
+          </p>
+          <div class="project-inline-detail mt-5 hidden" data-project-panel="mobile" data-project-id="narad-4">
+            <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[18px] font-normal leading-[1.5] tracking-[0.01em] text-white/78">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </button>
+
+        <h3 class="pt-3 text-center font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[40px] font-normal italic leading-none text-white" id="other-projects-1">
+          other projects
+        </h3>
+
+        <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-5" aria-pressed="false">
+          <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[24px] font-normal leading-[1.15] text-white" id="entity-linking-problem-for-narad-9">
+            Entity Linking Problem for Narad
+          </h3>
+          <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[16px] leading-[1.2] text-white/80">
+            • Data Problem • Machine Learning • DataBase
+          </p>
+          <div class="project-inline-detail mt-5 hidden" data-project-panel="mobile" data-project-id="narad-5">
+            <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[18px] font-normal leading-[1.5] tracking-[0.01em] text-white/78">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
 </main>
+
+<script>
+  (() => {
+    const groups = ["desktop", "mobile"];
+
+    const clearGroup = (group) => {
+      document.querySelectorAll(`[data-project-group="${group}"]`).forEach((item) => {
+        item.classList.remove("is-selected");
+        item.setAttribute("aria-pressed", "false");
+      });
+
+      if (group === "desktop") {
+        const panel = document.querySelector('[data-project-panel="desktop"]');
+        if (panel) panel.classList.add("hidden");
+      }
+
+      if (group === "mobile") {
+        document.querySelectorAll('[data-project-panel="mobile"]').forEach((panel) => {
+          panel.classList.add("hidden");
+        });
+      }
+    };
+
+    const selectItem = (group, id) => {
+      clearGroup(group);
+
+      const item = document.querySelector(`[data-project-group="${group}"][data-project-id="${id}"]`);
+      if (!item) return;
+
+      item.classList.add("is-selected");
+      item.setAttribute("aria-pressed", "true");
+
+      if (group === "desktop") {
+        const panel = document.querySelector('[data-project-panel="desktop"]');
+        if (panel) panel.classList.remove("hidden");
+      }
+
+      if (group === "mobile") {
+        const panel = document.querySelector(`[data-project-panel="mobile"][data-project-id="${id}"]`);
+        if (panel) panel.classList.remove("hidden");
+      }
+    };
+
+    groups.forEach((group) => {
+      document.querySelectorAll(`[data-project-group="${group}"]`).forEach((item) => {
+        item.addEventListener("click", () => {
+          const id = item.getAttribute("data-project-id");
+          const isSelected = item.classList.contains("is-selected");
+
+          if (isSelected) {
+            clearGroup(group);
+            return;
+          }
+
+          selectItem(group, id);
+        });
+      });
+    });
+
+    groups.forEach(clearGroup);
+  })();
+</script>
 
   </body>
 </html>

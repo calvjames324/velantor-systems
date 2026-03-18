@@ -7,16 +7,72 @@ domain: "pager.joodaloop.com"
 
 ![](./assets/bg.svg)
 
-![](./assets/bg.svg)
-
 # Velantor Systems
 
 A data-driven development studio
 
-We’re an engineering team focused on machine learning and applied AI, with strong web development to deliver complete, usable products. We stay close to current AI research and turn modern ideas into practical systems, not just demos.
+We’re an engineering team focused on machine learning and applied AI, with strong web development to deliver complete, usable products. We ship ML-driven POCs in about a week. From research-inspired prototypes to production-scale ML systems and full-stack applications, we build end to end.
 
-Our edge is speed with rigour: we ship ML-driven POCs in about a week, ready for validation, investor demos, or real usage. From research-inspired prototypes to production-scale ML systems and full-stack applications, we build end to end.
+Reach out to us on our email, or you can DM us on our LinkedIn below
 
-[about](#about) [work](#work)
+[work](#work) [linkedin](https://www.linkedin.com) [email](mailto:hello@velantor.systems)
 
 ![](./assets/hero.svg)
+
+## work
+
+### Entity Linking Problem for Narad
+
+• Data Problem • Machine Learning • DataBase
+
+### Entity Linking Problem for Narad
+
+• Data Problem • Machine Learning • DataBase
+
+### Entity Linking Problem for Narad
+
+• Data Problem • Machine Learning • DataBase
+
+### Entity Linking Problem for Narad
+
+• Data Problem • Machine Learning • DataBase
+
+### other projects
+
+### Entity Linking Problem for Narad
+
+• Data Problem • Machine Learning • DataBase
+
+Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+
+### Entity Linking Problem for Narad
+
+• Data Problem • Machine Learning • DataBase
+
+Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+
+### Entity Linking Problem for Narad
+
+• Data Problem • Machine Learning • DataBase
+
+Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+
+### Entity Linking Problem for Narad
+
+• Data Problem • Machine Learning • DataBase
+
+Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+
+### Entity Linking Problem for Narad
+
+• Data Problem • Machine Learning • DataBase
+
+Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+
+### other projects
+
+### Entity Linking Problem for Narad
+
+• Data Problem • Machine Learning • DataBase
+
+Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.

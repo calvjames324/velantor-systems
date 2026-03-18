@@ -1,61 +1,277 @@
-<main class="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#071726] text-white antialiased">
+<div class="page-bg pointer-events-none fixed inset-0 z-0">
   <img
     src="./assets/bg.svg"
     alt=""
     aria-hidden="true"
-    class="absolute inset-0 h-full w-full max-w-none"
+    class="h-full w-full object-cover"
   />
+</div>
 
-  <div class="relative h-[1024px] w-[1440px] shrink-0 overflow-hidden">
-    <img
-      src="./assets/bg.svg"
-      alt=""
-      aria-hidden="true"
-      class="absolute left-0 top-0 h-[1024px] w-[1440px] max-w-none opacity-0"
-    />
+<main class="relative z-10 text-white antialiased">
+  <section class="flex items-center px-8 py-16 min-[1200px]:h-screen min-[1200px]:overflow-hidden min-[1200px]:py-0 max-[1199px]:min-h-screen max-[1199px]:px-5 max-[1199px]:pt-12 max-[1199px]:pb-16">
+    <div class="mx-auto flex w-fit items-center justify-between gap-16 min-[1200px]:h-[800px] max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:flex-col max-[1199px]:items-center max-[1199px]:gap-10">
+      <div class="flex w-[680px] shrink-0 flex-col items-start max-[1199px]:w-full max-[1199px]:items-center">
+        <h1 class="w-fit font-['Alegreya_SC',system-ui,sans-serif] text-[72px] font-bold text-white max-[1199px]:text-center max-[1199px]:text-[50px] max-[1199px]:leading-[0.95]">
+          Velantor Systems
+        </h1>
 
-    <div class="relative flex h-full w-full items-center justify-center">
-      <section class="flex h-[800px] w-[1200px] items-center justify-between">
-        <div class="flex w-[680px] shrink-0 flex-col items-start overflow-hidden">
-          <h1 class="w-fit text-center font-['Alegreya_SC',system-ui,sans-serif] text-[72px] font-bold leading-[88px] text-white">
-            Velantor Systems
-          </h1>
-          <div class="tagline-word-spacing w-full mt-2 ml-2 text-[35px] font-normal italic text-white/60 font-['Alegreya_Sans',system-ui,sans-serif]">
-              A data-driven development studio
-          </div>
+        <div class="tagline-word-spacing mt-4 ml-2 font-['Alegreya',system-ui,sans-serif] text-[35px] font-normal italic text-white/60 max-[1199px]:ml-0 max-[1199px]:text-center max-[1199px]:text-[26px]">
+          A data-driven development studio
+        </div>
+        <div class="mt-1 ml-2 h-px w-[430px] bg-white/35 max-[1199px]:ml-0 max-[1199px]:w-[240px]"></div>
 
-          <div class="flex w-full flex-col items-start py-[50px]">
-            <p class="w-full font-['Alegreya_Sans',system-ui,sans-serif] text-[32px] font-light tracking-[0.01em] text-white/80">
-              We’re an engineering team focused on machine learning and applied AI, with strong web development to deliver complete, usable products. We stay close to current AI research and turn modern ideas into practical systems, not just demos.
-            </p>
-            <p class="mt-[30px] w-full font-['Alegreya_Sans',system-ui,sans-serif] text-[30px] font-light tracking-[0.01em] text-white/80">
-              Our edge is speed with rigour: we ship ML-driven POCs in about a week, ready for validation, investor demos, or real usage. From research-inspired prototypes to production-scale ML systems and full-stack applications, we build end to end.
-            </p>
-          </div>
-
-          <nav class="flex w-fit items-center justify-center gap-10 overflow-hidden">
-            <a
-              href="#about"
-              class="w-fit text-center font-['Alegreya',system-ui,sans-serif] text-[36px] font-bold leading-[44px] text-white underline decoration-[1px] underline-offset-[2px]"
-            >
-              about
-            </a>
-            <a
-              href="#work"
-              class="w-fit text-center font-['Alegreya',system-ui,sans-serif] text-[36px] font-bold leading-[44px] text-white underline decoration-[1px] underline-offset-[2px]"
-            >
-              work
-            </a>
-          </nav>
+        <div class="mt-12 flex w-full flex-col items-start gap-8 max-[1199px]:mt-8 max-[1199px]:gap-8">
+          <p class="w-full font-['Alegreya_Sans',system-ui,sans-serif] text-[32px] font-normal leading-[1.45] tracking-[0.01em] text-white/88 max-[1199px]:text-center max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]">
+            We’re an engineering team focused on machine learning and applied AI, with strong web development to deliver complete, usable products. We ship ML-driven POCs in about a week. From research-inspired prototypes to production-scale ML systems and full-stack applications, we build end to end.
+          </p>
+          <p class="w-full font-['Alegreya_Sans',system-ui,sans-serif] text-[32px] font-normal leading-[1.45] tracking-[0.01em] text-white/88 max-[1199px]:text-center max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]">
+            Reach out to us on our email, or you can DM us on our LinkedIn below
+          </p>
         </div>
 
+        <nav class="mt-12 flex w-fit items-center gap-14 max-[1199px]:mt-8 max-[1199px]:w-full max-[1199px]:justify-center max-[1199px]:gap-6">
+          <a
+            href="#work"
+            class="w-fit text-center font-['Alegreya',system-ui,sans-serif] text-[36px] font-bold text-white underline decoration-[1px] underline-offset-[2px] max-[1199px]:text-[28px]"
+          >
+            work
+          </a>
+          <a
+            href="https://www.linkedin.com"
+            class="w-fit text-center font-['Alegreya',system-ui,sans-serif] text-[36px] font-bold text-white underline decoration-[1px] underline-offset-[2px] max-[1199px]:text-[28px]"
+          >
+            linkedin
+          </a>
+          <a
+            href="mailto:hello@velantor.systems"
+            class="w-fit text-center font-['Alegreya',system-ui,sans-serif] text-[36px] font-bold text-white underline decoration-[1px] underline-offset-[2px] max-[1199px]:text-[28px]"
+          >
+            email
+          </a>
+        </nav>
+      </div>
+
+      <div class="flex w-[340px] shrink-0 justify-end max-[1199px]:hidden">
         <img
           src="./assets/hero.svg"
           alt=""
           aria-hidden="true"
-          class="h-[700px] w-[340px] shrink-0 max-w-none"
+          class="h-[700px] w-[340px] max-w-none"
         />
-      </section>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section id="work" class="flex px-8 py-16 min-[1200px]:h-screen min-[1200px]:items-center min-[1200px]:overflow-hidden min-[1200px]:py-0 max-[1199px]:px-5 max-[1199px]:pb-16 max-[1199px]:pt-10">
+    <div class="mx-auto flex w-fit flex-col gap-12 min-[1200px]:justify-center max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:gap-8">
+      <div class="flex w-fit flex-col max-[1199px]:mx-auto max-[1199px]:items-center">
+        <h2 class="font-['Alegreya',system-ui,sans-serif] text-[72px] font-bold leading-none text-white max-[1199px]:text-center max-[1199px]:text-[48px]">
+          work
+        </h2>
+        <div class="h-px w-full bg-white/70 max-[1199px]:w-[90px]"></div>
+      </div>
+
+      <div class="hidden w-fit items-start justify-between gap-14 max-[1199px]:hidden min-[1200px]:flex">
+        <div class="flex w-[550px] shrink-0 flex-col items-start gap-8">
+          <div class="flex w-full flex-col gap-6">
+            <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-1" aria-pressed="false">
+              <h3 class="font-['Alegreya',system-ui,sans-serif] text-[28px] max-[1199px]:text-[24px] font-regular text-white">
+                Entity Linking Problem for Narad
+              </h3>
+              <p class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.2] text-white/80">
+                • Data Problem • Machine Learning • DataBase
+              </p>
+            </button>
+
+            <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-2" aria-pressed="false">
+              <h3 class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.15] text-white">
+                Entity Linking Problem for Narad
+              </h3>
+              <p class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.2] text-white/80">
+                • Data Problem • Machine Learning • DataBase
+              </p>
+            </button>
+
+            <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-3" aria-pressed="false">
+              <h3 class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.15] text-white">
+                Entity Linking Problem for Narad
+              </h3>
+              <p class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.2] text-white/80">
+                • Data Problem • Machine Learning • DataBase
+              </p>
+            </button>
+
+            <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-4" aria-pressed="false">
+              <h3 class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.15] text-white">
+                Entity Linking Problem for Narad
+              </h3>
+              <p class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.2] text-white/80">
+                • Data Problem • Machine Learning • DataBase
+              </p>
+            </button>
+          </div>
+
+          <div class="flex w-full flex-col gap-4">
+            <h3 class="font-['Alegreya',system-ui,sans-serif] text-[44px] font-normal italic leading-none text-white">
+              other projects
+            </h3>
+            <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-5" aria-pressed="false">
+              <h3 class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.15] text-white">
+                Entity Linking Problem for Narad
+              </h3>
+              <p class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.2] text-white/80">
+                • Data Problem • Machine Learning • DataBase
+              </p>
+            </button>
+          </div>
+        </div>
+
+        <div class="w-[547px] shrink-0">
+          <div class="hidden" data-project-panel="desktop">
+            <p class="font-['Alegreya_Sans',system-ui,sans-serif] text-[30px] font-normal leading-[1.45] tracking-[0.01em] text-white/90">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6 min-[1200px]:hidden">
+        <button type="button" class="project-card-mobile project-toggle text-left" data-project-group="mobile" data-project-id="narad-1" aria-pressed="false">
+          <h3 class="font-['Alegreya',system-ui,sans-serif] text-[24px] font-normal leading-[1.15] text-white">
+            Entity Linking Problem for Narad
+          </h3>
+          <p class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[16px] leading-[1.2] text-white/80">
+            • Data Problem • Machine Learning • DataBase
+          </p>
+          <div class="project-inline-detail mt-5 hidden" data-project-panel="mobile" data-project-id="narad-1">
+            <p class="font-['Alegreya_Sans',system-ui,sans-serif] text-[18px] font-normal leading-[1.5] tracking-[0.01em] text-white/78">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </button>
+
+        <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-2" aria-pressed="false">
+          <h3 class="font-['Alegreya',system-ui,sans-serif] text-[24px] font-normal leading-[1.15] text-white">
+            Entity Linking Problem for Narad
+          </h3>
+          <p class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[16px] leading-[1.2] text-white/80">
+            • Data Problem • Machine Learning • DataBase
+          </p>
+          <div class="project-inline-detail mt-5 hidden" data-project-panel="mobile" data-project-id="narad-2">
+            <p class="font-['Alegreya_Sans',system-ui,sans-serif] text-[18px] font-normal leading-[1.5] tracking-[0.01em] text-white/78">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </button>
+
+        <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-3" aria-pressed="false">
+          <h3 class="font-['Alegreya',system-ui,sans-serif] text-[24px] font-normal leading-[1.15] text-white">
+            Entity Linking Problem for Narad
+          </h3>
+          <p class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[16px] leading-[1.2] text-white/80">
+            • Data Problem • Machine Learning • DataBase
+          </p>
+          <div class="project-inline-detail mt-5 hidden" data-project-panel="mobile" data-project-id="narad-3">
+            <p class="font-['Alegreya_Sans',system-ui,sans-serif] text-[18px] font-normal leading-[1.5] tracking-[0.01em] text-white/78">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </button>
+
+        <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-4" aria-pressed="false">
+          <h3 class="font-['Alegreya',system-ui,sans-serif] text-[24px] font-normal leading-[1.15] text-white">
+            Entity Linking Problem for Narad
+          </h3>
+          <p class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[16px] leading-[1.2] text-white/80">
+            • Data Problem • Machine Learning • DataBase
+          </p>
+          <div class="project-inline-detail mt-5 hidden" data-project-panel="mobile" data-project-id="narad-4">
+            <p class="font-['Alegreya_Sans',system-ui,sans-serif] text-[18px] font-normal leading-[1.5] tracking-[0.01em] text-white/78">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </button>
+
+        <h3 class="pt-3 text-center font-['Alegreya',system-ui,sans-serif] text-[40px] font-normal italic leading-none text-white">
+          other projects
+        </h3>
+
+        <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-5" aria-pressed="false">
+          <h3 class="font-['Alegreya',system-ui,sans-serif] text-[24px] font-normal leading-[1.15] text-white">
+            Entity Linking Problem for Narad
+          </h3>
+          <p class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[16px] leading-[1.2] text-white/80">
+            • Data Problem • Machine Learning • DataBase
+          </p>
+          <div class="project-inline-detail mt-5 hidden" data-project-panel="mobile" data-project-id="narad-5">
+            <p class="font-['Alegreya_Sans',system-ui,sans-serif] text-[18px] font-normal leading-[1.5] tracking-[0.01em] text-white/78">
+              Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+            </p>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
 </main>
+
+<script>
+  (() => {
+    const groups = ["desktop", "mobile"];
+
+    const clearGroup = (group) => {
+      document.querySelectorAll(`[data-project-group="${group}"]`).forEach((item) => {
+        item.classList.remove("is-selected");
+        item.setAttribute("aria-pressed", "false");
+      });
+
+      if (group === "desktop") {
+        const panel = document.querySelector('[data-project-panel="desktop"]');
+        if (panel) panel.classList.add("hidden");
+      }
+
+      if (group === "mobile") {
+        document.querySelectorAll('[data-project-panel="mobile"]').forEach((panel) => {
+          panel.classList.add("hidden");
+        });
+      }
+    };
+
+    const selectItem = (group, id) => {
+      clearGroup(group);
+
+      const item = document.querySelector(`[data-project-group="${group}"][data-project-id="${id}"]`);
+      if (!item) return;
+
+      item.classList.add("is-selected");
+      item.setAttribute("aria-pressed", "true");
+
+      if (group === "desktop") {
+        const panel = document.querySelector('[data-project-panel="desktop"]');
+        if (panel) panel.classList.remove("hidden");
+      }
+
+      if (group === "mobile") {
+        const panel = document.querySelector(`[data-project-panel="mobile"][data-project-id="${id}"]`);
+        if (panel) panel.classList.remove("hidden");
+      }
+    };
+
+    groups.forEach((group) => {
+      document.querySelectorAll(`[data-project-group="${group}"]`).forEach((item) => {
+        item.addEventListener("click", () => {
+          const id = item.getAttribute("data-project-id");
+          const isSelected = item.classList.contains("is-selected");
+
+          if (isSelected) {
+            clearGroup(group);
+            return;
+          }
+
+          selectItem(group, id);
+        });
+      });
+    });
+
+    groups.forEach(clearGroup);
+  })();
+</script>
