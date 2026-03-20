@@ -33,7 +33,7 @@
                                 ></div>
 
                                 <div
-                                        class="mt-12 flex w-150 flex-col items-start gap-8 max-[1199px]:mt-8 max-[1199px]:gap-8"
+                                        class="mt-12 flex w-full max-w-[600px] flex-col items-start gap-8 max-[1199px]:mt-8 max-[1199px]:items-center max-[1199px]:gap-8"
                                 >
                                         <p
                                                 class="w-full font-['Alegreya_Sans',system-ui,sans-serif] text-xl font-normal leading-[1.45] tracking-[0.01em] text-white/88 max-[1199px]:text-center max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]"
@@ -117,7 +117,7 @@
                                 class="flex w-fit items-start justify-between gap-28 max-[1199px]:hidden"
                         >
                                 <div
-                                        class="flex w-[550px] flex-col items-start gap-8"
+                                        class="flex w-[550px] flex-col items-start gap-8 max-[1199px]:w-full"
                                 >
                                         <div class="flex w-full flex-col gap-6">
                                                 <button
@@ -136,7 +136,6 @@
                                                                         >
                                                                                 Entity
                                                                                 Linking
-                                                                                Problem
                                                                         </h3>
                                                                         <p
                                                                                 class="mt-2 font-['Alegreya',system-ui,sans-serif] text-md leading-[1.2] text-white/80"
@@ -300,7 +299,7 @@
                                         </div>
                                 </div>
 
-                                <div class="w-[547px] shrink-0">
+                                <div class="w-[547px] shrink-0 max-[1199px]:w-full">
                                         <div
                                                 class="hidden flex flex-col gap-10"
                                                 data-project-panel="desktop"
@@ -471,6 +470,192 @@
                                                         to display the metrics.
                                                 </p>
                                         </div>
+                                </div>
+                        </div>
+
+                        <div class="hidden w-full flex-col gap-6 max-[1199px]:flex">
+                                <div
+                                        class="project-card flex w-full flex-col gap-5"
+                                >
+                                        <h3
+                                                class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white"
+                                        >
+                                                Entity Linking
+                                        </h3>
+                                        <p
+                                                class="font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
+                                        >
+                                                Solving deduplication and
+                                                canoncalization
+                                        </p>
+                                        <p
+                                                class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
+                                        >
+                                                <span class="font-bold"
+                                                        >Problem:
+                                                </span>
+                                                A fintech firm approached us
+                                                with the problem of Entity
+                                                Resolution, which arose from
+                                                daily ingestion of various
+                                                documents. The problems to solve
+                                                were those of deduplication and
+                                                canonicalization without a
+                                                ground truth available, in
+                                                constrained time.
+                                        </p>
+                                        <p
+                                                class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
+                                        >
+                                                <span class="font-bold"
+                                                        >Solution:
+                                                </span>
+                                                We build an automated pipeline
+                                                for canoncalization of the
+                                                entities using a graph-based
+                                                deduplication system build on
+                                                top of Neo4j, leveraging it's
+                                                native graph-search algorithms
+                                                to deliver a fast, efficient and
+                                                accurate solution.
+                                        </p>
+                                </div>
+
+                                <div
+                                        class="project-card flex w-full flex-col gap-5"
+                                >
+                                        <h3
+                                                class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white"
+                                        >
+                                                Trading Engine
+                                        </h3>
+                                        <p
+                                                class="font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
+                                        >
+                                                Implenting realtime trading
+                                                strategies
+                                        </p>
+                                        <p
+                                                class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
+                                        >
+                                                <span class="font-bold"
+                                                        >Problem:
+                                                </span>
+                                                Our client was a quantitative
+                                                trader who struggled with
+                                                algorithmic implementation and
+                                                backtesting of their algorithms,
+                                                when iterating became a
+                                                bottleneck while finding optimal
+                                                parameters for certain trading
+                                                strategies.
+                                        </p>
+                                        <p
+                                                class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
+                                        >
+                                                <span class="font-bold"
+                                                        >Solution:
+                                                </span>
+                                                Our solution was to utilize a
+                                                backtesting framework to
+                                                backtest their strategy and
+                                                implementing an event-based live
+                                                trading system to execute the
+                                                strategy on live markets using
+                                                broker APIs, alongside a
+                                                front-end for tracking and
+                                                monitoring of the same.
+                                        </p>
+                                </div>
+
+                                <div
+                                        class="project-card flex w-full flex-col gap-5"
+                                >
+                                        <h3
+                                                class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white"
+                                        >
+                                                Manufactoring Execution System
+                                        </h3>
+                                        <p
+                                                class="font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
+                                        >
+                                                Building an internal tracking
+                                                system
+                                        </p>
+                                        <p
+                                                class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
+                                        >
+                                                <span class="font-bold"
+                                                        >Problem:
+                                                </span>
+                                                We were approached by a
+                                                manufacturer with the problem of
+                                                internal tracking: too many
+                                                excel files being put into the
+                                                system, which made tracking of
+                                                essential processes tedious.
+                                        </p>
+                                        <p
+                                                class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
+                                        >
+                                                <span class="font-bold"
+                                                        >Solution:
+                                                </span>
+                                                We implemented a simple
+                                                internal tracking tool which
+                                                allowed for tracking of every
+                                                process based on input forms,
+                                                and provided various dashboards
+                                                and analytics, alongside routine
+                                                backups, which streamlined the
+                                                entire process.
+                                        </p>
+                                </div>
+
+                                <div
+                                        class="project-card flex w-full flex-col gap-5"
+                                >
+                                        <h3
+                                                class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white"
+                                        >
+                                                Voice Analytics
+                                        </h3>
+                                        <p
+                                                class="font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
+                                        >
+                                                Metric analysis of audio
+                                                scripts
+                                        </p>
+                                        <p
+                                                class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
+                                        >
+                                                <span class="font-bold"
+                                                        >Problem:
+                                                </span>
+                                                The requirement was to
+                                                implement a pipeline, which,
+                                                using audio transcripts could
+                                                derive important analytics from
+                                                voice call recordings, and for
+                                                those metrics to be displayed on
+                                                a dashboard.
+                                        </p>
+                                        <p
+                                                class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
+                                        >
+                                                <span class="font-bold"
+                                                        >Solution:
+                                                </span>
+                                                The solution we provided was to
+                                                implement a pipeline which
+                                                converted voice recordings to
+                                                text using audio model APIs,
+                                                before getting structured output
+                                                which could then be cleanly
+                                                mapped to AWS RDS columns. We
+                                                used Grafana to display the
+                                                metrics.
+                                        </p>
                                 </div>
                         </div>
                 </div>
