@@ -2,9 +2,9 @@
 title: Velantor Systems
 description: Engineering team focused on machine learning and applied AI
 favicon: "/assets/favicon.png"
-card: ""
+card: "VS"
 domain: velantorsystems.com
 port: 3000
 tailwind: true
 css:
-  - "/pager.css"
+        - "/pager.css"

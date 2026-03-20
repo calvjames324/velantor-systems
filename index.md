@@ -11,66 +11,42 @@ domain: "velantorsystems.com"
 
 A data-driven development studio
 
-We’re an engineering team focused on machine learning and applied AI, with strong web development to deliver complete, usable products. We ship ML-driven POCs in about a week. From research-inspired prototypes to production-scale ML systems and full-stack applications, we build end to end.
+We are a team of data-driven engineers who specialize in making sense of messy, real-world data — cleaning, automating, and processing it at scale, with a hard emphasis on robustness and efficiency. Coupled with a design-first mindset and strong web development, we deliver full-stack applications with end-to-end functionality. From a first prototype to a production-scale system, we build it all.
 
-[work](#work) [linkedin](https://www.linkedin.com) [email](mailto:hello@velantor.systems)
+[Linkedin](https://www.linkedin.com) [Email](mailto:hello@velantor.systems)
 
 ![](./assets/hero.svg)
 
-## work
+## Work
 
-### Entity Linking Problem for Narad
+### Entity Linking Problem
 
-• Data Problem • Machine Learning • DataBase
+Solving deduplication and canoncalization
 
-### Entity Linking Problem for Narad
+### Trading Engine
 
-• Data Problem • Machine Learning • DataBase
+Implenting realtime trading strategies
 
-### Entity Linking Problem for Narad
+### Manufactoring Execution System
 
-• Data Problem • Machine Learning • DataBase
+Building an internal tracking system
 
-### Entity Linking Problem for Narad
+### Voice Analytics
 
-• Data Problem • Machine Learning • DataBase
+Metric analysis of audio scripts
 
-### other projects
+Problem: A fintech firm approached us with the problem of Entity Resolution, which arose from daily ingestion of various documents. The problems to solve were those of deduplication and canonicalization without a ground truth available, in constrained time.
 
-### Entity Linking Problem for Narad
+Solution: We build an automated pipeline for canoncalization of the entities using a graph-based deduplication system build on top of Neo4j, leveraging it's native graph-search algorithms to deliver a fast, efficient and accurate solution.
 
-• Data Problem • Machine Learning • DataBase
+Problem: Our client was a quantitative trader who struggled with algorithmic implementation and backtesting of their algorithms, when iterating became a bottleneck while finding optimal parameters for certain trading strategies.
 
-Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+Solution: Our solution was to utilize a backtesting framework to backtest their strategy and implementing an event-based live trading system to execute the strategy on live markets using broker APIs, alongside a front-end for tracking and monitoring of the same.
 
-### Entity Linking Problem for Narad
+Problem: We were approached by a manufacturer with the problem of internal tracking: too many excel files being put into the system, which made tracking of essential processes tedious.
 
-• Data Problem • Machine Learning • DataBase
+Solution: We implemented a simple internal tracking tool which allowed for tracking of every process based on input forms, and provided various dashboards and analytics, alongside routine backups, which streamlined the entire process.
 
-Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+Problem: The requirement was to implement a pipeline, which, using audio transcripts could derive important analytics from voice call recordings, and for those metrics to be displayed on a dashboard.
 
-### Entity Linking Problem for Narad
-
-• Data Problem • Machine Learning • DataBase
-
-Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
-
-### Entity Linking Problem for Narad
-
-• Data Problem • Machine Learning • DataBase
-
-Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
-
-### Entity Linking Problem for Narad
-
-• Data Problem • Machine Learning • DataBase
-
-Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
-
-### other projects
-
-### Entity Linking Problem for Narad
-
-• Data Problem • Machine Learning • DataBase
-
-Narad - an analytics based fund approached us with a fascinating problem. In their comprehensive data repository that contains analysts and the companies they work for contains many duplicates and company resolution conflicts. After many iterations to deduplicate data, we came upon an optimal heuristic to link the related entities and helped Narad to have a cleaner dataset.
+Solution: The solution we provided was to implement a pipeline which converted voice recordings to text using audio model APIs, before getting structured output which could then be cleanly mapped to AWS RDS columns. We used Grafana to display the metrics.
