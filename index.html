@@ -290,11 +290,11 @@
   .h-\[50px\] {
     height: 50px;
   }
+  .h-\[300px\] {
+    height: 300px;
+  }
   .h-\[600px\] {
     height: 600px;
-  }
-  .h-\[650px\] {
-    height: 650px;
   }
   .h-\[800px\] {
     height: 800px;
@@ -335,17 +335,17 @@
   .w-\[270px\] {
     width: 270px;
   }
-  .w-\[290px\] {
-    width: 290px;
-  }
   .w-\[320px\] {
     width: 320px;
   }
   .w-\[340px\] {
     width: 340px;
   }
-  .w-\[350px\] {
-    width: 350px;
+  .w-\[360px\] {
+    width: 360px;
+  }
+  .w-\[500px\] {
+    width: 500px;
   }
   .w-\[547px\] {
     width: 547px;
@@ -356,6 +356,9 @@
   .w-\[680px\] {
     width: 680px;
   }
+  .w-\[760px\] {
+    width: 760px;
+  }
   .w-fit {
     width: fit-content;
   }
@@ -364,6 +367,12 @@
   }
   .max-w-\[600px\] {
     max-width: 600px;
+  }
+  .max-w-\[760px\] {
+    max-width: 760px;
+  }
+  .max-w-\[1220px\] {
+    max-width: 1220px;
   }
   .max-w-none {
     max-width: none;
@@ -395,6 +404,9 @@
   .flex-row {
     flex-direction: row;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .content-center {
     align-content: center;
   }
@@ -404,6 +416,9 @@
   .items-start {
     align-items: flex-start;
   }
+  .items-stretch {
+    align-items: stretch;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -412,6 +427,9 @@
   }
   .justify-end {
     justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
   }
   .gap-0 {
     gap: calc(var(--spacing) * 0);
@@ -479,6 +497,12 @@
   .gap-200 {
     gap: calc(var(--spacing) * 200);
   }
+  .gap-x-8 {
+    column-gap: calc(var(--spacing) * 8);
+  }
+  .gap-y-3 {
+    row-gap: calc(var(--spacing) * 3);
+  }
   .overflow-clip {
     overflow: clip;
   }
@@ -525,8 +549,17 @@
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
   }
+  .pt-1 {
+    padding-top: calc(var(--spacing) * 1);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
@@ -536,6 +569,9 @@
   }
   .pr-20 {
     padding-right: calc(var(--spacing) * 20);
+  }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
   }
   .text-center {
     text-align: center;
@@ -584,59 +620,35 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .text-\[1\.1rem\] {
-    font-size: 1.1rem;
-  }
-  .text-\[1\.3rem\] {
-    font-size: 1.3rem;
-  }
   .text-\[1\.4rem\] {
     font-size: 1.4rem;
-  }
-  .text-\[1\.6rem\] {
-    font-size: 1.6rem;
   }
   .text-\[1\.7rem\] {
     font-size: 1.7rem;
   }
-  .text-\[1\.8rem\] {
-    font-size: 1.8rem;
-  }
-  .text-\[1\.9rem\] {
-    font-size: 1.9rem;
-  }
-  .text-\[1\.45rem\] {
-    font-size: 1.45rem;
-  }
-  .text-\[1rem\] {
-    font-size: 1rem;
-  }
-  .text-\[2\.5rem\] {
-    font-size: 2.5rem;
-  }
-  .text-\[2rem\] {
-    font-size: 2rem;
-  }
-  .text-\[3\.5rem\] {
-    font-size: 3.5rem;
-  }
   .text-\[3rem\] {
     font-size: 3rem;
-  }
-  .text-\[4rem\] {
-    font-size: 4rem;
-  }
-  .text-\[5rem\] {
-    font-size: 5rem;
   }
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .text-\[22px\] {
     font-size: 22px;
   }
+  .text-\[23px\] {
+    font-size: 23px;
+  }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
   .text-\[28px\] {
     font-size: 28px;
+  }
+  .text-\[32px\] {
+    font-size: 32px;
   }
   .leading-10 {
     --tw-leading: calc(var(--spacing) * 10);
@@ -653,6 +665,10 @@
   .leading-\[1\.2\] {
     --tw-leading: 1.2;
     line-height: 1.2;
+  }
+  .leading-\[1\.05\] {
+    --tw-leading: 1.05;
+    line-height: 1.05;
   }
   .leading-\[1\.5\] {
     --tw-leading: 1.5;
@@ -686,6 +702,10 @@
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
   }
+  .tracking-\[0\.001em\] {
+    --tw-tracking: 0.001em;
+    letter-spacing: 0.001em;
+  }
   .tracking-\[0\.01em\] {
     --tw-tracking: 0.01em;
     letter-spacing: 0.01em;
@@ -702,16 +722,16 @@
   .text-white {
     color: var(--color-white);
   }
+  .text-white\/45 {
+    color: color-mix(in srgb, #fff 45%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 45%, transparent);
+    }
+  }
   .text-white\/60 {
     color: color-mix(in srgb, #fff 60%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-white) 60%, transparent);
-    }
-  }
-  .text-white\/75 {
-    color: color-mix(in srgb, #fff 75%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      color: color-mix(in oklab, var(--color-white) 75%, transparent);
     }
   }
   .text-white\/80 {
@@ -724,12 +744,6 @@
     color: color-mix(in srgb, #fff 85%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-white) 85%, transparent);
-    }
-  }
-  .text-white\/88 {
-    color: color-mix(in srgb, #fff 88%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      color: color-mix(in oklab, var(--color-white) 88%, transparent);
     }
   }
   .italic {
@@ -751,9 +765,15 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  .opacity-95 {
+    opacity: 95%;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .max-\[1199px\]\:mx-auto {
     @media (width < 1199px) {
@@ -773,6 +793,11 @@
   .max-\[1199px\]\:ml-0 {
     @media (width < 1199px) {
       margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .max-\[1199px\]\:block {
+    @media (width < 1199px) {
+      display: block;
     }
   }
   .max-\[1199px\]\:flex {
@@ -803,26 +828,6 @@
   .max-\[1199px\]\:w-\[240px\] {
     @media (width < 1199px) {
       width: 240px;
-    }
-  }
-  .max-\[1199px\]\:w-\[250px\] {
-    @media (width < 1199px) {
-      width: 250px;
-    }
-  }
-  .max-\[1199px\]\:w-\[260px\] {
-    @media (width < 1199px) {
-      width: 260px;
-    }
-  }
-  .max-\[1199px\]\:w-\[270px\] {
-    @media (width < 1199px) {
-      width: 270px;
-    }
-  }
-  .max-\[1199px\]\:w-\[280px\] {
-    @media (width < 1199px) {
-      width: 280px;
     }
   }
   .max-\[1199px\]\:w-full {
@@ -858,6 +863,11 @@
       justify-content: center;
     }
   }
+  .max-\[1199px\]\:justify-start {
+    @media (width < 1199px) {
+      justify-content: flex-start;
+    }
+  }
   .max-\[1199px\]\:gap-6 {
     @media (width < 1199px) {
       gap: calc(var(--spacing) * 6);
@@ -883,6 +893,16 @@
       padding-inline: calc(var(--spacing) * 5);
     }
   }
+  .max-\[1199px\]\:pt-2 {
+    @media (width < 1199px) {
+      padding-top: calc(var(--spacing) * 2);
+    }
+  }
+  .max-\[1199px\]\:pt-8 {
+    @media (width < 1199px) {
+      padding-top: calc(var(--spacing) * 8);
+    }
+  }
   .max-\[1199px\]\:pt-10 {
     @media (width < 1199px) {
       padding-top: calc(var(--spacing) * 10);
@@ -893,6 +913,11 @@
       padding-top: calc(var(--spacing) * 12);
     }
   }
+  .max-\[1199px\]\:pb-12 {
+    @media (width < 1199px) {
+      padding-bottom: calc(var(--spacing) * 12);
+    }
+  }
   .max-\[1199px\]\:pb-16 {
     @media (width < 1199px) {
       padding-bottom: calc(var(--spacing) * 16);
@@ -901,6 +926,11 @@
   .max-\[1199px\]\:text-center {
     @media (width < 1199px) {
       text-align: center;
+    }
+  }
+  .max-\[1199px\]\:text-\[18px\] {
+    @media (width < 1199px) {
+      font-size: 18px;
     }
   }
   .max-\[1199px\]\:text-\[22px\] {
@@ -983,6 +1013,59 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -994,6 +1077,19 @@
       --tw-font-weight: initial;
       --tw-tracking: initial;
       --tw-outline-style: solid;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
     }
   }
 }
@@ -1008,19 +1104,19 @@
 
 <main class="relative z-10 text-white antialiased">
         <section class="flex h-screen items-center overflow-hidden px-8 py-0 max-[1199px]:min-h-screen max-[1199px]:overflow-visible max-[1199px]:px-5 max-[1199px]:pt-12 max-[1199px]:pb-16">
-                <div class="mx-auto flex h-[800px] w-fit origin-center items-center justify-end gap-40 max-[1199px]:h-auto max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:scale-100 max-[1199px]:flex-col max-[1199px]:items-center max-[1199px]:gap-10">
+                <div class="mx-auto flex h-[800px] w-full origin-center items-center justify-end gap-40 max-[1199px]:h-auto max-[1199px]:max-w-[440px] max-[1199px]:scale-100 max-[1199px]:flex-col max-[1199px]:items-center max-[1199px]:gap-10" style="max-width: 1090px">
                         <div class="flex w-[680px] shrink-0 flex-col items-start max-[1199px]:w-full max-[1199px]:items-center">
                                 <h1 class="w-fit font-[&#39;Alegreya_SC&#39;,system-ui,sans-serif] text-[3rem] font-bold text-white max-[1199px]:text-center max-[1199px]:text-[50px] max-[1199px]:leading-[0.95]" id="velantor-systems">
                                         Velantor Systems
                                 </h1>
 
-                                <div class="tagline-word-spacing ml-2 mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[1.7rem] font-normal italic text-white/60 max-[1199px]:ml-0 max-[1199px]:text-center max-[1199px]:text-[26px] max-[1199px]:mt-4">
+                                <div class="tagline-word-spacing ml-2 mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[1.7rem] font-normal italic text-white/60 max-[1199px]:hidden">
                                         A data-driven development studio
                                 </div>
-                                <div class="ml-2 h-px w-[340px] bg-white/35 max-[1199px]:ml-0 max-[1199px]:w-[240px]"></div>
+                                <div class="ml-2 h-px w-[340px] bg-white/35 max-[1199px]:hidden"></div>
 
-                                <div class="mt-8 flex w-full max-w-[600px] flex-col items-start gap-8 max-[1199px]:mt-8 max-[1199px]:items-center max-[1199px]:gap-8">
-                                        <p class="w-full font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[1.4rem] font-normal leading-[1.45] tracking-[0.01em] text-white/80 max-[1199px]:text-center max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]">
+                                <div class="mt-8 flex w-full max-w-[600px] flex-col items-start gap-8 max-[1199px]:mt-8 max-[1199px]:gap-8">
+                                        <p class="w-full font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[1.4rem] font-normal leading-[1.45] tracking-[0.01em] text-white/80 max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]">
                                                 We are a team of data-driven
                                                 engineers who specialize in
                                                 making sense of messy,
@@ -1039,7 +1135,7 @@
                                         </p>
                                 </div>
 
-                                <nav class="mt-12 flex w-fit items-center gap-14 max-[1199px]:mt-8 max-[1199px]:w-full max-[1199px]:justify-center max-[1199px]:gap-6">
+                                <nav class="mt-12 flex w-fit items-center gap-14 max-[1199px]:mt-8 max-[1199px]:w-full max-[1199px]:justify-start max-[1199px]:gap-6">
                                         <!--<a
                                                 href="#work"
                                                 class="w-fit text-center font-['Alegreya',system-ui,sans-serif] text-2xl font-bold text-white underline decoration-[1px] underline-offset-[2px] max-[1199px]:text-[28px]"
@@ -1061,8 +1157,46 @@
                 </div>
         </section>
 
+        <section id="about" class="px-8 pt-4 pb-16 max-[1199px]:px-5 max-[1199px]:pt-8 max-[1199px]:pb-12">
+                <div class="mx-auto flex w-full items-center justify-between gap-10 max-[1199px]:block max-[1199px]:max-w-[440px]" style="max-width: 1090px">
+                        <div class="flex w-[320px] shrink-0 justify-start max-[1199px]:hidden">
+                                <img src="./assets/img1.png" alt="" aria-hidden="true" class="h-[300px] w-[320px] max-w-none opacity-95" style="filter: invert(1) opacity(0.68); aspect-ratio: 561 / 622"/>
+                        </div>
+
+                        <div class="flex w-[680px] flex-col gap-12 max-[1199px]:w-full max-[1199px]:gap-8">
+                                <div class="flex w-fit flex-col max-[1199px]:mx-auto max-[1199px]:items-center">
+                                        <h2 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-5xl font-bold leading-none text-white max-[1199px]:text-center max-[1199px]:text-[48px]" id="about-1">
+                                                About
+                                        </h2>
+                                        <div class="h-px w-full bg-white/70 max-[1199px]:w-[90px]"></div>
+                                </div>
+
+                                <p class="w-full text-left font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[1.4rem] font-normal leading-[1.45] tracking-[0.01em] text-white/80 max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]">
+                                        We are
+                                        <a href="https://astledsa.com" class="text-white underline decoration-[1px] underline-offset-[2px]">Astle Dsa</a>
+                                        and
+                                        <a href="https://calvinjames.xyz" class="text-white underline decoration-[1px] underline-offset-[2px]">Calvin James</a>. We started Velantor Systems to work
+                                        on data and automation problems that
+                                        businesses deal with in practice,
+                                        making data usable, connecting systems
+                                        that do not work well together, and
+                                        reducing manual processes. A lot of what
+                                        we work on involves unstructured or
+                                        messy setups where there is not a clear
+                                        starting point, so we focus on breaking
+                                        problems down and building from there.
+                                        Our work typically includes data
+                                        pipelines, workflow automation, and
+                                        system integrations that are designed to
+                                        be simple, reliable, and easy to
+                                        maintain.
+                                </p>
+                        </div>
+                </div>
+        </section>
+
         <section id="work" class="flex h-screen items-center overflow-hidden px-8 py-0 max-[1199px]:h-auto max-[1199px]:overflow-visible max-[1199px]:px-5 max-[1199px]:pt-10 max-[1199px]:pb-16">
-                <div class="mx-auto flex w-fit origin-center flex-col justify-center gap-20 max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:scale-100 max-[1199px]:gap-8">
+                <div class="mx-auto flex w-full origin-center flex-col justify-center gap-20 max-[1199px]:max-w-[440px] max-[1199px]:scale-100 max-[1199px]:gap-8" style="max-width: 1090px">
                         <div class="flex w-fit flex-col max-[1199px]:mx-auto max-[1199px]:items-center">
                                 <h2 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-5xl font-bold leading-none text-white max-[1199px]:text-center max-[1199px]:text-[48px]" id="work-1">
                                         Work
@@ -1070,8 +1204,8 @@
                                 <div class="h-px w-full bg-white/70 max-[1199px]:w-[90px]"></div>
                         </div>
 
-                        <div class="flex w-fit items-start justify-between gap-28 max-[1199px]:hidden">
-                                <div class="flex w-[550px] flex-col items-start gap-8 max-[1199px]:w-full">
+                        <div class="flex w-full items-start justify-between max-[1199px]:hidden" style="column-gap: 60px">
+                                <div class="flex flex-col items-start gap-8 max-[1199px]:w-full" style="width: 480px">
                                         <div class="flex w-full flex-col gap-6">
                                                 <button type="button" class="project-card project-toggle text-left" data-project-group="desktop" data-project-id="narad-1" aria-pressed="false">
                                                         <div class="flex flex-row justify-between">
@@ -1164,7 +1298,7 @@
                                         </div>
                                 </div>
 
-                                <div class="w-[547px] shrink-0 max-[1199px]:w-full">
+                                <div class="shrink-0 max-[1199px]:w-full" style="width: 550px">
                                         <div class="hidden flex flex-col gap-10" data-project-panel="desktop" data-project-id="narad-1">
                                                 <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-2xl font-normal leading-[1.45] tracking-[0.01em] text-white/85">
                                                         <span class="font-bold">Problem:
@@ -1299,14 +1433,16 @@
                         </div>
 
                         <div class="hidden w-full flex-col gap-6 max-[1199px]:flex">
-                                <div class="project-card flex w-full flex-col gap-5">
+                                <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-1" aria-pressed="false">
                                         <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white" id="entity-linking-1">
                                                 Entity Linking
                                         </h3>
-                                        <p class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80">
+                                        <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80">
                                                 Solving deduplication and
                                                 canoncalization
                                         </p>
+                                </button>
+                                <div class="project-card-mobile project-card-active hidden w-full flex flex-col gap-5" data-project-panel="mobile" data-project-id="narad-1">
                                         <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85">
                                                 <span class="font-bold">Problem:
                                                 </span>
@@ -1334,14 +1470,16 @@
                                         </p>
                                 </div>
 
-                                <div class="project-card flex w-full flex-col gap-5">
+                                <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-2" aria-pressed="false">
                                         <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white" id="trading-engine-1">
                                                 Trading Engine
                                         </h3>
-                                        <p class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80">
+                                        <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80">
                                                 Implenting realtime trading
                                                 strategies
                                         </p>
+                                </button>
+                                <div class="project-card-mobile project-card-active hidden w-full flex flex-col gap-5" data-project-panel="mobile" data-project-id="narad-2">
                                         <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85">
                                                 <span class="font-bold">Problem:
                                                 </span>
@@ -1369,14 +1507,16 @@
                                         </p>
                                 </div>
 
-                                <div class="project-card flex w-full flex-col gap-5">
+                                <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-3" aria-pressed="false">
                                         <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white" id="manufactoring-execution-system-1">
                                                 Manufactoring Execution System
                                         </h3>
-                                        <p class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80">
+                                        <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80">
                                                 Building an internal tracking
                                                 system
                                         </p>
+                                </button>
+                                <div class="project-card-mobile project-card-active hidden w-full flex flex-col gap-5" data-project-panel="mobile" data-project-id="narad-3">
                                         <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85">
                                                 <span class="font-bold">Problem:
                                                 </span>
@@ -1401,14 +1541,16 @@
                                         </p>
                                 </div>
 
-                                <div class="project-card flex w-full flex-col gap-5">
+                                <button type="button" class="project-card-mobile project-card-mobile-compact project-toggle text-left" data-project-group="mobile" data-project-id="narad-4" aria-pressed="false">
                                         <h3 class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white" id="voice-analytics-1">
                                                 Voice Analytics
                                         </h3>
-                                        <p class="font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80">
+                                        <p class="mt-2 font-[&#39;Alegreya&#39;,system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80">
                                                 Metric analysis of audio
                                                 scripts
                                         </p>
+                                </button>
+                                <div class="project-card-mobile project-card-active hidden w-full flex flex-col gap-5" data-project-panel="mobile" data-project-id="narad-4">
                                         <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85">
                                                 <span class="font-bold">Problem:
                                                 </span>
@@ -1420,7 +1562,7 @@
                                                 those metrics to be displayed on
                                                 a dashboard.
                                         </p>
-                                        <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85">
+                                        <p class="font-[&#39;Alegreya_Sans&#39;,system-ui,sans-serif] text-[22px] font-normal leading-[1.5] text-white/85">
                                                 <span class="font-bold">Solution:
                                                 </span>
                                                 The solution we provided was to
@@ -1451,21 +1593,11 @@
                                 item.setAttribute("aria-pressed", "false");
                         });
 
-                        if (group === "desktop") {
-                                document.querySelectorAll(
-                                        '[data-project-panel="desktop"]',
-                                ).forEach((panel) => {
-                                        panel.classList.add("hidden");
-                                });
-                        }
-
-                        if (group === "mobile") {
-                                document.querySelectorAll(
-                                        '[data-project-panel="mobile"]',
-                                ).forEach((panel) => {
-                                        panel.classList.add("hidden");
-                                });
-                        }
+                        document.querySelectorAll(
+                                `[data-project-panel="${group}"]`,
+                        ).forEach((panel) => {
+                                panel.classList.add("hidden");
+                        });
                 };
 
                 const selectItem = (group, id) => {
@@ -1479,19 +1611,10 @@
                         item.classList.add("is-selected");
                         item.setAttribute("aria-pressed", "true");
 
-                        if (group === "desktop") {
-                                const panel = document.querySelector(
-                                        `[data-project-panel="desktop"][data-project-id="${id}"]`,
-                                );
-                                if (panel) panel.classList.remove("hidden");
-                        }
-
-                        if (group === "mobile") {
-                                const panel = document.querySelector(
-                                        `[data-project-panel="mobile"][data-project-id="${id}"]`,
-                                );
-                                if (panel) panel.classList.remove("hidden");
-                        }
+                        const panel = document.querySelector(
+                                `[data-project-panel="${group}"][data-project-id="${id}"]`,
+                        );
+                        if (panel) panel.classList.remove("hidden");
                 };
 
                 groups.forEach((group) => {
@@ -1509,6 +1632,9 @@
                                                 );
 
                                         if (isSelected) {
+                                                if (group === "mobile") {
+                                                        clearGroup(group);
+                                                }
                                                 return;
                                         }
 
@@ -1517,19 +1643,17 @@
                         });
                 });
 
-                groups.forEach((group) => {
-                        clearGroup(group);
+                clearGroup("desktop");
+                const firstDesktopItem = document.querySelector(
+                        '[data-project-group="desktop"]',
+                );
+                const firstDesktopId =
+                        firstDesktopItem?.getAttribute("data-project-id");
+                if (firstDesktopId) {
+                        selectItem("desktop", firstDesktopId);
+                }
 
-                        const firstItem = document.querySelector(
-                                `[data-project-group="${group}"]`,
-                        );
-                        const firstId =
-                                firstItem?.getAttribute("data-project-id");
-
-                        if (firstId) {
-                                selectItem(group, firstId);
-                        }
-                });
+                clearGroup("mobile");
         })();
 </script>
 

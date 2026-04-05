@@ -12,7 +12,8 @@
                 class="flex h-screen items-center overflow-hidden px-8 py-0 max-[1199px]:min-h-screen max-[1199px]:overflow-visible max-[1199px]:px-5 max-[1199px]:pt-12 max-[1199px]:pb-16"
         >
                 <div
-                        class="mx-auto flex h-[800px] w-fit origin-center items-center justify-end gap-40 max-[1199px]:h-auto max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:scale-100 max-[1199px]:flex-col max-[1199px]:items-center max-[1199px]:gap-10"
+                        class="mx-auto flex h-[800px] w-full origin-center items-center justify-end gap-40 max-[1199px]:h-auto max-[1199px]:max-w-[440px] max-[1199px]:scale-100 max-[1199px]:flex-col max-[1199px]:items-center max-[1199px]:gap-10"
+                        style="max-width: 1090px"
                 >
                         <div
                                 class="flex w-[680px] shrink-0 flex-col items-start max-[1199px]:w-full max-[1199px]:items-center"
@@ -24,19 +25,19 @@
                                 </h1>
 
                                 <div
-                                        class="tagline-word-spacing ml-2 mt-2 font-['Alegreya',system-ui,sans-serif] text-[1.7rem] font-normal italic text-white/60 max-[1199px]:ml-0 max-[1199px]:text-center max-[1199px]:text-[26px] max-[1199px]:mt-4"
+                                        class="tagline-word-spacing ml-2 mt-2 font-['Alegreya',system-ui,sans-serif] text-[1.7rem] font-normal italic text-white/60 max-[1199px]:hidden"
                                 >
                                         A data-driven development studio
                                 </div>
                                 <div
-                                        class="ml-2 h-px w-[340px] bg-white/35 max-[1199px]:ml-0 max-[1199px]:w-[240px]"
+                                        class="ml-2 h-px w-[340px] bg-white/35 max-[1199px]:hidden"
                                 ></div>
 
                                 <div
-                                        class="mt-8 flex w-full max-w-[600px] flex-col items-start gap-8 max-[1199px]:mt-8 max-[1199px]:items-center max-[1199px]:gap-8"
+                                        class="mt-8 flex w-full max-w-[600px] flex-col items-start gap-8 max-[1199px]:mt-8 max-[1199px]:gap-8"
                                 >
                                         <p
-                                                class="w-full font-['Alegreya_Sans',system-ui,sans-serif] text-[1.4rem] font-normal leading-[1.45] tracking-[0.01em] text-white/80 max-[1199px]:text-center max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]"
+                                                class="w-full font-['Alegreya_Sans',system-ui,sans-serif] text-[1.4rem] font-normal leading-[1.45] tracking-[0.01em] text-white/80 max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]"
                                         >
                                                 We are a team of data-driven
                                                 engineers who specialize in
@@ -57,7 +58,7 @@
                                 </div>
 
                                 <nav
-                                        class="mt-12 flex w-fit items-center gap-14 max-[1199px]:mt-8 max-[1199px]:w-full max-[1199px]:justify-center max-[1199px]:gap-6"
+                                        class="mt-12 flex w-fit items-center gap-14 max-[1199px]:mt-8 max-[1199px]:w-full max-[1199px]:justify-start max-[1199px]:gap-6"
                                 >
                                         <!--<a
                                                 href="#work"
@@ -94,15 +95,84 @@
         </section>
 
         <section
+                id="about"
+                class="px-8 pt-4 pb-16 max-[1199px]:px-5 max-[1199px]:pt-8 max-[1199px]:pb-12"
+        >
+                <div
+                        class="mx-auto flex w-full items-center justify-between gap-10 max-[1199px]:block max-[1199px]:max-w-[440px]"
+                        style="max-width: 1090px"
+                >
+                        <div
+                                class="flex w-[320px] shrink-0 justify-start max-[1199px]:hidden"
+                        >
+                                <img
+                                        src="./assets/img1.png"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="h-[300px] w-[320px] max-w-none opacity-95"
+                                        style="filter: invert(1) opacity(0.68)"
+                                />
+                        </div>
+
+                        <div
+                                class="flex w-[680px] flex-col gap-12 max-[1199px]:w-full max-[1199px]:gap-8"
+                        >
+                                <div
+                                        class="flex w-fit flex-col max-[1199px]:mx-auto max-[1199px]:items-center"
+                                >
+                                        <h2
+                                                class="font-['Alegreya',system-ui,sans-serif] text-5xl font-bold leading-none text-white max-[1199px]:text-center max-[1199px]:text-[48px]"
+                                        >
+                                                About
+                                        </h2>
+                                        <div
+                                                class="h-px w-full bg-white/70 max-[1199px]:w-[90px]"
+                                        ></div>
+                                </div>
+
+                                <p
+                                        class="w-full text-left font-['Alegreya_Sans',system-ui,sans-serif] text-[1.4rem] font-normal leading-[1.45] tracking-[0.01em] text-white/80 max-[1199px]:text-[22px] max-[1199px]:leading-[1.55]"
+                                >
+                                        We are
+                                        <a
+                                                href="https://astledsa.com"
+                                                class="text-white underline decoration-[1px] underline-offset-[2px]"
+                                                >Astle Dsa</a
+                                        >
+                                        and
+                                        <a
+                                                href="https://calvinjames.xyz"
+                                                class="text-white underline decoration-[1px] underline-offset-[2px]"
+                                                >Calvin James</a
+                                        >. We started Velantor Systems to work
+                                        on data and automation problems that
+                                        businesses deal with in practice,
+                                        making data usable, connecting systems
+                                        that do not work well together, and
+                                        reducing manual processes. A lot of what
+                                        we work on involves unstructured or
+                                        messy setups where there is not a clear
+                                        starting point, so we focus on breaking
+                                        problems down and building from there.
+                                        Our work typically includes data
+                                        pipelines, workflow automation, and
+                                        system integrations that are designed to
+                                        be simple, reliable, and easy to
+                                        maintain.
+                                </p>
+                        </div>
+                </div>
+        </section>
+
+        <section
                 id="work"
                 class="flex h-screen items-center overflow-hidden px-8 py-0 max-[1199px]:h-auto max-[1199px]:overflow-visible max-[1199px]:px-5 max-[1199px]:pt-10 max-[1199px]:pb-16"
         >
                 <div
-                        class="mx-auto flex w-fit origin-center flex-col justify-center gap-20 max-[1199px]:w-full max-[1199px]:max-w-[440px] max-[1199px]:scale-100 max-[1199px]:gap-8"
+                        class="mx-auto flex w-full origin-center flex-col justify-center gap-20 max-[1199px]:max-w-[440px] max-[1199px]:scale-100 max-[1199px]:gap-8"
+                        style="max-width: 1090px"
                 >
-                        <div
-                                class="flex w-fit flex-col max-[1199px]:mx-auto max-[1199px]:items-center"
-                        >
+                        <div class="flex w-fit flex-col max-[1199px]:mx-auto max-[1199px]:items-center">
                                 <h2
                                         class="font-['Alegreya',system-ui,sans-serif] text-5xl font-bold leading-none text-white max-[1199px]:text-center max-[1199px]:text-[48px]"
                                 >
@@ -114,10 +184,12 @@
                         </div>
 
                         <div
-                                class="flex w-fit items-start justify-between gap-28 max-[1199px]:hidden"
+                                class="flex w-full items-start justify-between max-[1199px]:hidden"
+                                style="column-gap: 60px"
                         >
                                 <div
-                                        class="flex w-[550px] flex-col items-start gap-8 max-[1199px]:w-full"
+                                        class="flex flex-col items-start gap-8 max-[1199px]:w-full"
+                                        style="width: 480px"
                                 >
                                         <div class="flex w-full flex-col gap-6">
                                                 <button
@@ -299,7 +371,10 @@
                                         </div>
                                 </div>
 
-                                <div class="w-[547px] shrink-0 max-[1199px]:w-full">
+                                <div
+                                        class="shrink-0 max-[1199px]:w-full"
+                                        style="width: 550px"
+                                >
                                         <div
                                                 class="hidden flex flex-col gap-10"
                                                 data-project-panel="desktop"
@@ -474,8 +549,12 @@
                         </div>
 
                         <div class="hidden w-full flex-col gap-6 max-[1199px]:flex">
-                                <div
-                                        class="project-card flex w-full flex-col gap-5"
+                                <button
+                                        type="button"
+                                        class="project-card-mobile project-card-mobile-compact project-toggle text-left"
+                                        data-project-group="mobile"
+                                        data-project-id="narad-1"
+                                        aria-pressed="false"
                                 >
                                         <h3
                                                 class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white"
@@ -483,11 +562,17 @@
                                                 Entity Linking
                                         </h3>
                                         <p
-                                                class="font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
+                                                class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
                                         >
                                                 Solving deduplication and
                                                 canoncalization
                                         </p>
+                                </button>
+                                <div
+                                        class="project-card-mobile project-card-active hidden w-full flex flex-col gap-5"
+                                        data-project-panel="mobile"
+                                        data-project-id="narad-1"
+                                >
                                         <p
                                                 class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
                                         >
@@ -521,8 +606,12 @@
                                         </p>
                                 </div>
 
-                                <div
-                                        class="project-card flex w-full flex-col gap-5"
+                                <button
+                                        type="button"
+                                        class="project-card-mobile project-card-mobile-compact project-toggle text-left"
+                                        data-project-group="mobile"
+                                        data-project-id="narad-2"
+                                        aria-pressed="false"
                                 >
                                         <h3
                                                 class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white"
@@ -530,11 +619,17 @@
                                                 Trading Engine
                                         </h3>
                                         <p
-                                                class="font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
+                                                class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
                                         >
                                                 Implenting realtime trading
                                                 strategies
                                         </p>
+                                </button>
+                                <div
+                                        class="project-card-mobile project-card-active hidden w-full flex flex-col gap-5"
+                                        data-project-panel="mobile"
+                                        data-project-id="narad-2"
+                                >
                                         <p
                                                 class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
                                         >
@@ -568,8 +663,12 @@
                                         </p>
                                 </div>
 
-                                <div
-                                        class="project-card flex w-full flex-col gap-5"
+                                <button
+                                        type="button"
+                                        class="project-card-mobile project-card-mobile-compact project-toggle text-left"
+                                        data-project-group="mobile"
+                                        data-project-id="narad-3"
+                                        aria-pressed="false"
                                 >
                                         <h3
                                                 class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white"
@@ -577,11 +676,17 @@
                                                 Manufactoring Execution System
                                         </h3>
                                         <p
-                                                class="font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
+                                                class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
                                         >
                                                 Building an internal tracking
                                                 system
                                         </p>
+                                </button>
+                                <div
+                                        class="project-card-mobile project-card-active hidden w-full flex flex-col gap-5"
+                                        data-project-panel="mobile"
+                                        data-project-id="narad-3"
+                                >
                                         <p
                                                 class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
                                         >
@@ -612,8 +717,12 @@
                                         </p>
                                 </div>
 
-                                <div
-                                        class="project-card flex w-full flex-col gap-5"
+                                <button
+                                        type="button"
+                                        class="project-card-mobile project-card-mobile-compact project-toggle text-left"
+                                        data-project-group="mobile"
+                                        data-project-id="narad-4"
+                                        aria-pressed="false"
                                 >
                                         <h3
                                                 class="font-['Alegreya',system-ui,sans-serif] text-[28px] font-normal leading-[1.1] text-white"
@@ -621,11 +730,17 @@
                                                 Voice Analytics
                                         </h3>
                                         <p
-                                                class="font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
+                                                class="mt-2 font-['Alegreya',system-ui,sans-serif] text-[18px] leading-[1.25] text-white/80"
                                         >
                                                 Metric analysis of audio
                                                 scripts
                                         </p>
+                                </button>
+                                <div
+                                        class="project-card-mobile project-card-active hidden w-full flex flex-col gap-5"
+                                        data-project-panel="mobile"
+                                        data-project-id="narad-4"
+                                >
                                         <p
                                                 class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
                                         >
@@ -641,7 +756,7 @@
                                                 a dashboard.
                                         </p>
                                         <p
-                                                class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] tracking-[0.01em] text-white/85"
+                                                class="font-['Alegreya_Sans',system-ui,sans-serif] text-[22px] font-normal leading-[1.5] text-white/85"
                                         >
                                                 <span class="font-bold"
                                                         >Solution:
@@ -674,21 +789,11 @@
                                 item.setAttribute("aria-pressed", "false");
                         });
 
-                        if (group === "desktop") {
-                                document.querySelectorAll(
-                                        '[data-project-panel="desktop"]',
-                                ).forEach((panel) => {
-                                        panel.classList.add("hidden");
-                                });
-                        }
-
-                        if (group === "mobile") {
-                                document.querySelectorAll(
-                                        '[data-project-panel="mobile"]',
-                                ).forEach((panel) => {
-                                        panel.classList.add("hidden");
-                                });
-                        }
+                        document.querySelectorAll(
+                                `[data-project-panel="${group}"]`,
+                        ).forEach((panel) => {
+                                panel.classList.add("hidden");
+                        });
                 };
 
                 const selectItem = (group, id) => {
@@ -702,19 +807,10 @@
                         item.classList.add("is-selected");
                         item.setAttribute("aria-pressed", "true");
 
-                        if (group === "desktop") {
-                                const panel = document.querySelector(
-                                        `[data-project-panel="desktop"][data-project-id="${id}"]`,
-                                );
-                                if (panel) panel.classList.remove("hidden");
-                        }
-
-                        if (group === "mobile") {
-                                const panel = document.querySelector(
-                                        `[data-project-panel="mobile"][data-project-id="${id}"]`,
-                                );
-                                if (panel) panel.classList.remove("hidden");
-                        }
+                        const panel = document.querySelector(
+                                `[data-project-panel="${group}"][data-project-id="${id}"]`,
+                        );
+                        if (panel) panel.classList.remove("hidden");
                 };
 
                 groups.forEach((group) => {
@@ -732,6 +828,9 @@
                                                 );
 
                                         if (isSelected) {
+                                                if (group === "mobile") {
+                                                        clearGroup(group);
+                                                }
                                                 return;
                                         }
 
@@ -740,18 +839,16 @@
                         });
                 });
 
-                groups.forEach((group) => {
-                        clearGroup(group);
+                clearGroup("desktop");
+                const firstDesktopItem = document.querySelector(
+                        '[data-project-group="desktop"]',
+                );
+                const firstDesktopId =
+                        firstDesktopItem?.getAttribute("data-project-id");
+                if (firstDesktopId) {
+                        selectItem("desktop", firstDesktopId);
+                }
 
-                        const firstItem = document.querySelector(
-                                `[data-project-group="${group}"]`,
-                        );
-                        const firstId =
-                                firstItem?.getAttribute("data-project-id");
-
-                        if (firstId) {
-                                selectItem(group, firstId);
-                        }
-                });
+                clearGroup("mobile");
         })();
 </script>

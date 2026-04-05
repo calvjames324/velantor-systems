@@ -17,6 +17,12 @@ We are a team of data-driven engineers who specialize in making sense of messy, 
 
 ![](./assets/hero.svg)
 
+![](./assets/img1.png)
+
+## About
+
+We are [Astle Dsa](https://astledsa.com) and [Calvin James](https://calvinjames.xyz). We started Velantor Systems to work on data and automation problems that businesses deal with in practice, making data usable, connecting systems that do not work well together, and reducing manual processes. A lot of what we work on involves unstructured or messy setups where there is not a clear starting point, so we focus on breaking problems down and building from there. Our work typically includes data pipelines, workflow automation, and system integrations that are designed to be simple, reliable, and easy to maintain.
+
 ## Work
 
 ### Entity Linking
